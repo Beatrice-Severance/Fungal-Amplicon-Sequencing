@@ -58,3 +58,18 @@ df[df$name == "Jie",] #all rows associated with the specified name
 df$value[df$name == "Jie"] #value associated with the name Jie
 
 subset(df, name == "Jie")
+
+#install.packages("ggplot2")
+#install.packages("dplyr")
+install.packages("purrr")
+install.packages("lme4")
+install.packages("emmeans")
+library("ggplot2")
+library("dplyr")
+library("purrr")
+library("lme4")
+library("emmeans")
+
+filename = "TipsR.csv"
+tips = read.csv(filename, header = TRUE)
+tips
