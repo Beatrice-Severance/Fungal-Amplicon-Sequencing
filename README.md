@@ -26,6 +26,12 @@ This is a script that can dereplicate, cluster, and remove chimeras.
 - [Technical support](http://drive5.com/usearch/manual/support.html) 
 
 # Create Taxonomy
-
+This script utilizes the NBC algorithm in order to produce a fungal taxonomy from the provided samples.
 
 # Mapping
+This script will create an OTU table that will be used for downstream analysis. It utilizes the demultiplexed reads and aligns these reads back to the clustered OTUs.
+
+#
+Combined, these steps should provide output files that can be utilized in a phyloseq object in R.
+
+# R Analysis
