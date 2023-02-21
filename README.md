@@ -26,7 +26,7 @@ This is a script that can dereplicate, cluster, and remove chimeras.
 - [Technical support](http://drive5.com/usearch/manual/support.html) 
 
 # Create Taxonomy
-This script utilizes the NBC algorithm in order to produce a fungal taxonomy from the provided samples.
+This script utilizes the NBC algorithm in order to produce a fungal taxonomy from the provided samples. This script requires the file dada2_assigntax_NBC.R which will use the database provided to create NBC taxonomy. This script requires a large amount of memory in order to run, likely because the database itself is large. The script will create a .rds file which will allow users to view the taxonomy in R or RStudio.
 
 # Mapping
 This script will create an OTU table that will be used for downstream analysis. It utilizes the demultiplexed reads and aligns these reads back to the clustered OTUs.
