@@ -71,5 +71,5 @@ library("lme4")
 library("emmeans")
 
 filename = "TipsR.csv"
-tips = read.csv(filename, header = TRUE)
+tips = read.csv(filename, header = TRUE, na.strings = ".")
 tips
