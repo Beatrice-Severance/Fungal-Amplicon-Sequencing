@@ -3,6 +3,24 @@ RMarkdownExample
 Beatrice Severance, Zachary Noel
 2023-02-23
 
+# This is a first level header
+
+## This is a second level header
+
+### This is a third level header
+
+#### This is a fourth level header
+
+*italics*
+
+*also italics*
+
+**bold**
+
+**also bold**
+
+> This is emphasized text
+
 ``` r
 data("mtcars")
 summary(mtcars)
@@ -29,3 +47,27 @@ summary(mtcars)
     ##  Mean   :0.4062   Mean   :3.688   Mean   :2.812  
     ##  3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  
     ##  Max.   :1.0000   Max.   :5.000   Max.   :8.000
+
+### Unordered lists
+
+- one item
+- second item
+- third item
+  - another item
+- item 1 again
+- item 2 again
+- item 3 again
+  - another item again
+
+1.  The first item
+2.  The second item
+3.  The third item
+    - item under third
+
+### Links
+
+Github repository:
+<https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing>
+
+[Link to my
+github](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing)
