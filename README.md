@@ -37,7 +37,7 @@ This script requires the file dada2_assigntax_NBC.R which will use the database 
 ## [SINTAX Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/5_taxonomy_SINTAX.sh)
 This script utilizes the SINTAX algorithm to create a fungal taxonomy. VSEARCH is the medium used to achieve this goal. The database that was used for this script is located [here](https://doi.plutof.ut.ee/doi/10.15156/BIO/2483914). The latest release was used for analysis: 29.11.2022
 
-# Mapping
+# [Mapping](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/6_mapping.sh)
 This script will create an OTU table that will be used for downstream analysis. It utilizes the [demultiplexed reads](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/combsamples.txt) and aligns these reads back to the clustered OTUs (otus_R1.fasta).
 
 #
