@@ -1,0 +1,400 @@
+Sample_ID,DNA_extraction_number,Sample,DPF,DateExtracted,DateSampled,FungicideSprayed,ActiveIngredient,Row,Column,BarcodePlate,Barcode_number,Barcode,Time,Tree,Fungicide,Bagged,Objective,Control,AfterSpray,Cultivar ,YearPlanted,TreeAge,Description,Rep,Number of leaves,Severity (Number of lesions total),Incidence (Number of leaves with lesions),Notes,PercentInc,AveLesionsPerLeaf,Year,Type
+NC11,109,na,na,9/7/2022,na,na,na,na,na,7,na,CCGCTACGTG,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC12,132,na,na,9/9/2022,na,na,na,na,na,7,na,TCCATTTCAT,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC13,155,na,na,9/14/2022,na,na,na,na,na,7,na,CCAATCGTGC,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC14,176,na,na,9/19/2022,na,na,na,na,na,7,na,TGCAACTTGC,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC15,202,na,na,9/28/2022,na,na,na,na,na,6,na,ACTGGATCTC,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC17,227,na,na,10/4/2022,na,na,na,na,na,6,na,CCTAGTAAGC,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC18,251,na,na,10/11/2022,na,na,na,na,na,6,na,CAGCGACTGT,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+NC19,274,na,na,10/14/2022,na,na,na,na,na,6,na,TACGTGATCC,na,na,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+PC2_2,192,,na,na,na,na,na,na,na,7,,GACGCTTTGC,na,na,na,na,na,Positive Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+PC3_2,288,na,na,na,na,na,na,na,na,6,na,CGATTGTTCC,na,na,na,na,na,Positive Control,na,na,na,na,na,na,na,na,na,na,na,na,2022,na
+P2H10NTC,P2H10NTC,P2H10NTC,P2H10NTC,P2H10NTC,P2H10NTC,na,na,H,10,7,656,TGCAACTTGC,P2H10NTC,P2H10NTC,na,na,na,Negative Control,na,na,na,na,P2H10NTC,na,na,na,na,na,na,na,2021,Leaf
+P2H11NTC,P2H11NTC,P2H11NTC,P2H11NTC,P2H11NTC,P2H11NTC,na,na,H,11,7,664,ATGGTTCACC,P2H11NTC,P2H11NTC,na,na,na,Negative Control,na,na,na,na,P2H11NTC,na,na,na,na,na,na,na,2021,Leaf
+P2H12NTC,P2H12NTC,P2H12NTC,P2H12NTC,P2H12NTC,P2H12NTC,na,na,H,12,7,672,GACGCTTTGC,P2H12NTC,P2H12NTC,na,na,na,Negative Control,na,na,na,na,P2H12NTC,na,na,na,na,na,na,na,2021,Leaf
+P2H6NTC,P2H6NTC,P2H6NTC,P2H6NTC,P2H6NTC,P2H6NTC,na,na,H,6,7,624,TCATTCCACT,P2H6NTC,P2H6NTC,na,na,na,Negative Control,na,na,na,na,P2H6NTC,na,na,na,na,na,na,na,2021,Leaf
+PC1,PC1,PC1,PC1,PC1,PC1,na,na,H,7,7,632,GACCTACCGC,PC1,PC1,na,na,na,Positive  Control,na,na,na,na,PC1,na,na,na,na,na,na,na,2021,Leaf
+PC2,PC2,PC2,PC2,PC2,PC2,na,na,H,8,7,640,GCAGAGAGGC,PC2,PC2,na,na,na,Positive  Control,na,na,na,na,PC2,na,na,na,na,na,na,na,2021,Leaf
+PC3,PC3,PC3,PC3,PC3,PC3,na,na,H,9,7,648,GTGACGTTAG,PC3,PC3,na,na,na,Positive  Control,na,na,na,na,PC3,na,na,na,na,na,na,na,2021,Leaf
+C112CT1,24,112CC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,12,6,570,TGGTTATGGC,T1,112C,Control,na,1,Sample,na,Desirable,1990,32,na,1,11,0,0,na,0,0,2021,Leaf
+C120FT1,20,120FC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,8,6,538,TGACCGGCTG,T1,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,11,0,0,na,0,0,2021,Leaf
+C123HT1,19,123HC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,7,6,530,CGAATACTGA,T1,123H,Control,na,1,Sample,na,Desirable,2000,22,na,6,9,0,0,na,0,0,2021,Leaf
+C126ET1,21,126EC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,9,6,546,GATATACCAG,T1,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,11,0,0,na,0,0,2021,Leaf
+C129DT1,22,129DC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,10,6,554,GTCCGCAAGT,T1,129D,Control,na,1,Sample,na,Desirable,2008,14,na,3,11,2,2,na,18.18181818,0.181818182,2021,Leaf
+C130BT1,23,130BC,0-dpf,16-Dec-21,28-Apr-21,None,None,B,11,6,562,TACGTGATCC,T1,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,11,3,3,na,27.27272727,0.272727273,2021,Leaf
+F112CT1,18,112CF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,6,6,522,AGTGTGAACG,T1,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,na,1,11,0,0,na,0,0,2021,Leaf
+F120FT1,14,120FF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,2,6,490,ACTGGATCTC,T1,120F,Fungicide,na,1,Sample,na,Desirable,2000,22,na,5,11,0,0,na,0,0,2021,Leaf
+F123HT1,13,123HF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,1,6,482,AGTTGTAGTC,T1,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,Desirable; Rep 6; Fungicide Sprayed,6,9,0,0,na,0,0,2021,Leaf
+F126ET1,15,126EF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,3,6,498,CCATGAAGTG,T1,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,na,4,13,2,3,na,23.07692308,0.153846154,2021,Leaf
+F129DT1,16,129DF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,4,6,506,TCGGGCTCTT,T1,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,11,1,1,na,9.090909091,0.090909091,2021,Leaf
+F130BT1,17,130BF,0-dpf,16-Dec-21,28-Apr-21,None,None,B,5,6,514,ATCGGGCTTA,T1,130B,Fungicide,na,1,Sample,na,Desirable,1999,23,na,2,11,2,2,na,18.18181818,0.181818182,2021,Leaf
+U112CC,228,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TTACCGACGA,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U112CF,229,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TTACCTTACA,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U120FC,235,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,ATTGCAAGCA,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U120FF,236,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,ATCACCAGGT,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U126EC,241,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,GATGACCCAA,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U126EF,242,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,CGAATACTGA,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U126GC,243,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TATCCTGGTT,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U126GF,244,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,ACCGGAGTAG,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U129DC,245,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TAAGCTAAAC,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U129DF,246,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,CGGGTGTTTG,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U130BC,247,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TTGGAACGGC,T1,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U130BF,248,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,CATTGGGAGT,T1,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+C119CT1,25,119CC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,1,6,483,CTTGTCTGGA,T1,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,11,0,0,na,0,0,2021,Leaf
+C120GT1,29,120GC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,5,6,515,CCTAGTAAGC,T1,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,11,0,0,na,0,0,2021,Leaf
+C122DT1,27,122DC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,3,6,499,GGAATTATCG,T1,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,9,0,0,na,0,0,2021,Leaf
+C125HT1,30,125HC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,6,6,523,ATTGCAAGCA,T1,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+C126FT1,28,126FC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,4,6,507,GCGTAGAGAG,T1,126F,Control,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,0,0,2021,Leaf
+C132BT1,26,132BC,0-dpf,16-Dec-21,28-Apr-21,None,None,C,2,6,491,TCAAGGGACC,T1,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,0,0,2021,Leaf
+F119CT1,31,119CF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,7,6,531,TATCCTGGTT,T1,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,na,1,9,0,0,na,0,0,2021,Leaf
+F120GT1,35,120GF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,11,6,563,TGGGTAGATC,T1,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,9,0,0,na,0,0,2021,Leaf
+F122DT1,33,122DF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,9,6,547,GTAGACATGT,T1,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,na,3,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+F125HT1,36,125HF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,12,6,571,TCGGTTACGC,T1,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+F126FT1,34,126FF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,10,6,555,ATCCGTCTGA,T1,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,11,0,0,na,0,0,2021,Leaf
+F132BT1,32,132BF,0-dpf,16-Dec-21,28-Apr-21,None,None,C,8,6,539,CAGCGACTGT,T1,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,0,0,2021,Leaf
+U115GF,230,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TGACTAATGG,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U119CC,231,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,GCATGCATCC,T1,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U119CF,232,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,GACAGTAGCT,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U119GC,233,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TGAACGTTGG,T1,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U119GF,234,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,AGTGTGAACG,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U120GC,237,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TTGATCCGGT,T1,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U120GF,238,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,CACAGTTGAA,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U122DC,239,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,CTAGGATCAC,T1,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U122DF,240,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,GCTGTTTGAC,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U132BC,249,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,GATCGGTTAA,T1,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+U132BF,250,na,0-dpf,10/11/2022,4/12/2022,None,None,na,na,6,na,TGACCGGCTG,T1,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+B1AST1,4,B1_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,4,6,505,TTATGTACGG,T1,B1AST1,na,Bagged,2,Sample,After Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+B1BST1,10,B1_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,10,6,553,CTTCGACTTT,T1,B1BST1,na,Bagged,2,Sample,Before Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+B2AST1,5,B2_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,5,6,513,GTCATGCTCC,T1,B2AST1,na,Bagged,2,Sample,After Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+B2BST1,11,B2_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,11,6,561,TTGACCGCGG,T1,B2BST1,na,Bagged,2,Sample,Before Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+B3AST1,6,B3_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,6,6,521,TGAACGTTGG,T1,B3AST1,na,Bagged,2,Sample,After Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+B3BST1,12,B3_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,12,6,569,GGTTTCTATC,T1,B3BST1,na,Bagged,2,Sample,Before Spray,na,na,na,bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+NB1AST1,1,NB1_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,1,6,481,TCCGTGGTAT,T1,NB1AST1,na,Not Bagged,2,Sample,After Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+NB1BST1,7,NB1_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,7,6,529,GATGACCCAA,T1,NB1BST1,na,Not Bagged,2,Sample,Before Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled before bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+NB2AST1,2,NB2_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,2,6,489,ACCTACTTGT,T1,NB2AST1,na,Not Bagged,2,Sample,After Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+NB2BST1,8,NB2_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,8,6,537,GATCGGTTAA,T1,NB2BST1,na,Not Bagged,2,Sample,Before Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled before bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+NB3AST1,3,NB3_AS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,3,6,497,TCGTCAAACC,T1,NB3AST1,na,Not Bagged,2,Sample,After Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled after bagging on April 29th,na,na,na,na,na,na,na,2021,Leaf
+NB3BST1,9,NB3_BS_T1,0-dpf,16-Dec-21,28-Apr-21,None,None,A,9,6,545,GCCCAAGTTC,T1,NB3BST1,na,Not Bagged,2,Sample,Before Spray,na,na,na,Not bagged; control to see if bagging alters microbiome; sample taken from across street; sampled before bagging on April 28th,na,na,na,na,na,na,na,2021,Leaf
+NECT1,37,NEC,0-dpf,16-Dec-21,28-Apr-21,None,None,D,1,6,484,TCTACGGCAC,T1,NECT1,na,na,na,Negative Control,na,na,na,na,Negative Extraction Control,na,na,na,na,na,na,na,2021,Leaf
+A112CC,203,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TCAAGGGACC,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A112CF,204,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TGCAGTCCTC,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A120FC,211,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,GGAATTATCG,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A120FF,212,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TAGACACCGT,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A126EC,217,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TTATGTACGG,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,4,1,na,na,na,2022,Leaf
+A126EF,218,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TCGGGCTCTT,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,na,na,na,2022,na
+A126GC,219,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,GCGTAGAGAG,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,3,3,na,na,na,2022,Leaf
+A126GF,220,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,AACCAGCAGA,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A129DC,221,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TAATCGGTGC,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A129DF,222,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,GGCAAATACA,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A130BC,223,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,CACAAGTATC,T2,na,Control,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A130BF,224,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,CTACAGGGTC,T2,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+C112CT2,56,112CC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,8,6,541,GAACACTTTG,T2,112C,Control,na,1,Sample,na,Desirable,1990,32,na,1,9,0,0,na,0,0,2021,Leaf
+C120FT2,41,120FC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,5,6,516,TTACCGACGA,T2,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,13,1,1,na,7.692307692,0.076923077,2021,Leaf
+C123HT2,38,123HC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,2,6,492,TGCAGTCCTC,T2,123H,Control,na,1,Sample,na,Desirable,2000,22,na,6,11,0,0,Evidence of Leaf Scorching,0,0,2021,Leaf
+C126ET2,55,126EC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,7,6,533,TAAGCTAAAC,T2,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,11,6,4,na,36.36363636,0.545454545,2021,Leaf
+C129DT2,53,129DC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,5,6,517,TTACCTTACA,T2,129D,Control,na,1,Sample,na,Desirable,2008,14,na,3,11,6,2,Evidence of Leaf Scorching,18.18181818,0.545454545,2021,Leaf
+C130BT2,61,130BC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,F,1,6,486,ACCGCATCAA,T2,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,11,3,2,Evidence of Leaf Scorching,18.18181818,0.272727273,2021,Leaf
+F112CT2,57,112CF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,9,6,549,ATCCCAGCAT,T2,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,na,1,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+F120FT2,40,120FF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,4,6,508,AACCAGCAGA,T2,120F,Fungicide,na,1,Sample,na,Desirable,2000,22,na,5,11,5,3,na,27.27272727,0.454545455,2021,Leaf
+F123HT2,39,123HF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,3,6,500,TAGACACCGT,T2,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,na,6,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+F126ET2,54,126EF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,6,6,525,TTGATCCGGT,T2,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,na,4,13,0,0,na,0,0,2021,Leaf
+F129DT2,52,129DF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,4,6,509,TAATCGGTGC,T2,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,9,6,3,na,33.33333333,0.666666667,2021,Leaf
+F130BT2,60,130BF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,12,6,573,TGCTACAGAC,T2,130B,Fungicide,na,1,Sample,na,Desirable,1999,23,na,2,9,2,1,na,11.11111111,0.222222222,2021,Leaf
+C119CT2,58,119CC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,10,6,557,CCTCTGAGAG,T2,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,11,0,0,Evidence of Leaf Scorching,0,0,2021,Leaf
+C120GT2,47,120GC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,11,6,564,AGCAATCGGT,T2,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,9,0,0,Evidence of Leaf Scorching,0,0,2021,Leaf
+C122DT2,45,122DC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,9,6,548,TACAGTTACG,T2,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+C125HT2,43,125HC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,7,6,532,ACCGGAGTAG,T2,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,11,0,0,Evidence of Leaf Scorching,0,0,2021,Leaf
+C126FT2,49,126FC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,1,6,485,CACGAGCTAC,T2,126F,Control,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,0,0,2021,Leaf
+C132BT2,50,132BC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,2,6,493,AAGTCGACAC,T2,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,0,0,2021,Leaf
+F119CT2,59,119CF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,11,6,565,GTTGGACGAA,T2,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,na,1,8,0,0,na,0,0,2021,Leaf
+F120GT2,46,120GF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,10,6,556,CGTAGAGCTC,T2,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,9,0,0,na,0,0,2021,Leaf
+F122DT2,44,122DF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,8,6,540,AGCGACGAAG,T2,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,na,3,8,0,0,na,0,0,2021,Leaf
+F125HT2,42,125HF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,6,6,524,ATCACCAGGT,T2,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+F126FT2,48,126FF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,D,12,6,572,CGAGGTTCTG,T2,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,0,0,2021,Leaf
+F132BT2,51,132BF,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,E,3,6,501,TCCACAGGGT,T2,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,0,0,2021,Leaf
+A115GC,205,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,AAGTCGACAC,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A115GF,206,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,GTACGATATG,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A119FC,207,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,AACATTGCAG,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A119FF,208,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,CCGTGACAAC,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A119GC,209,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TCGTCAAACC,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A119GF,210,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,CCATGAAGTG,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A120GC,213,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TCCACAGGGT,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A120GF,214,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,TCATTAGCGT,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A122DC,215,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,CATCGCGTTG,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A122DF,216,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,ATGTCGAATA,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A132BC,225,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,GTCATGCTCC,T2,na,Control,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+A132BF,226,na,12-dpf,10/4/2022,4/27/2022,Phostrol,Phosphorous acid salts,,na,6,,ATCGGGCTTA,T2,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,na,na,na,no scab,na,na,2022,Leaf
+NECT2,62,NEC,9-dpf,17-Dec-21,7-May-21,STRATEGO on April 28th - 9dpf,Propiconazole + Trifloxystrobin,F,2,6,494,GTACGATATG,T2,NECT2,na,na,na,Negative Control,na,na,na,na,Negative Extraction Control,na,na,na,na,na,na,na,2021,Leaf
+C112CT3,117,112CC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,10,7,650,CCGGCTTATG,T3,112C,Control,na,1,Sample,na,Desirable,1990,32,14-May,1,9,2,2,na,22.22222222,0.222222222,2021,Leaf
+C120FT3,88,120FC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,4,6,512,CTACAGGGTC,T3,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,10,1,1,na,10,0.1,2021,Leaf
+C123HT3,108,123HC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,1,7,578,TAATTGCAGA,T3,123H,Control,na,1,Sample,na,Desirable,2000,22,13-May,6,9,0,0,na,0,0,2021,Leaf
+C126ET3,116,126EC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,9,7,642,ACGATTCGAG,T3,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,13,15,7,na,53.84615385,1.153846154,2021,Leaf
+C129DT3,101,129DC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,6,7,617,TACTCTCTTA,T3,129D,Control,na,1,Sample,na,Desirable,2008,14,na,3,9,5,4,na,44.44444444,0.555555556,2021,Leaf
+C130BT3,105,130BC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,10,7,649,ATGGAAGGTG,T3,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,11,4,3,na,27.27272727,0.363636364,2021,Leaf
+F112CT3,114,112CF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,7,7,626,GTCACATCAC,T3,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,13-May,1,11,2,1,na,9.090909091,0.181818182,2021,Leaf
+F120FT3,102,120FF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,7,7,625,GGCCAAGGAA,T3,120F,Fungicide,na,1,Sample,na,Desirable,2000,22,na,5,11,0,0,na,0,0,2021,Leaf
+F123HT3,96,123HF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,1,7,577,GATGGTTTCA,T3,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,na,6,11,1,1,na,9.090909091,0.090909091,2021,Leaf
+F126ET3,103,126EF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,8,7,633,CCAGTGGATA,T3,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,13-May,4,11,1,1,na,9.090909091,0.090909091,2021,Leaf
+F129DT3,97,129DF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,2,7,585,CTCCACATTC,T3,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,11,2,1,na,9.090909091,0.181818182,2021,Leaf
+F130BT3,121,130BF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,C,2,7,587,AATCGCCCTT,T3,130B,Fungicide,na,1,Sample,na,Desirable,1999,23,na,2,11,4,4,na,36.36363636,0.363636364,2021,Leaf
+M1112CC,177,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,GTGTGGCAGA,T3,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,18,8,na,na,na,2022,Leaf
+M1112CF,178,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,TACTACGTGG,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,20,3,na,na,na,2022,Leaf
+M1120FC,185,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,GTGAGGGCAA,T3,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,36,7,na,na,na,2022,Leaf
+M1120FF,186,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CGTGGGCTCA,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,9,1,1,na,na,na,2022,Leaf
+M1126EF1,191,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CGTGTAGTAG,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,4,13,3,na,na,na,2022,Leaf
+M1126EF2,193,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,TCCGTGGTAT,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,7,17,7,na,na,na,2022,Leaf
+M1126GC,194,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,AGTTGTAGTC,T3,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,22,8,na,na,na,2022,Leaf
+M1126GF,195,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,CTTGTCTGGA,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,26,8,na,na,na,2022,Leaf
+M1129DC,196,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,TCTACGGCAC,T3,na,Control,na,na,Sample,na,Desirable,na,na,na,na,9,9,4,na,na,na,2022,Leaf
+M1129DF,197,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,CACGAGCTAC,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,7,6,2,na,na,na,2022,Leaf
+M1130BC,198,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,ACCGCATCAA,T3,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,14,5,na,na,na,2022,Leaf
+M1130BF,199,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,ATGCTGCAAC,T3,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,12,6,na,na,na,2022,Leaf
+C119CT3,91,119CC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,7,6,536,CATTGGGAGT,T3,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,11,0,0,na,0,0,2021,Leaf
+C120GT3,113,120GC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,6,7,618,CTCCCACTAG,T3,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,11,0,0,na,0,0,2021,Leaf
+C122DT3,93,122DC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,9,6,552,GCTTCCAGAC,T3,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,7,0,0,na,0,0,2021,Leaf
+C125HT3,95,125HC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,11,6,568,ACGGAAATCC,T3,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,8,0,0,na,0,0,2021,Leaf
+C126FT3,106,126FC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,11,7,657,GTGTGGCAGA,T3,126F,Control,na,1,Sample,na,Elliot,2000,22,13-May,4,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+C132BT3,119,132BC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,12,7,666,CGTGGGCTCA,T3,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+F119CT3,122,119CF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,C,3,7,595,CGCTTAGTGC,T3,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,13-May,1,11,1,1,na,9.090909091,0.090909091,2021,Leaf
+F120GT3,89,120GF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,5,6,520,GACAGTAGCT,T3,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,7,0,0,na,0,0,2021,Leaf
+F122DT3,98,122DF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,3,7,593,TAATACGGAT,T3,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,13-May,3,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+F125HT3,94,125HF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,10,6,560,TAACGTGTGT,T3,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+F126FT3,120,126FF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,C,1,7,579,AAGGCGCTCC,T3,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,8,1,1,na,12.5,0.125,2021,Leaf
+F132BT3,100,132BF,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,5,7,609,GGCCTATAAG,T3,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,9,1,1,na,11.11111111,0.111111111,2021,Leaf
+M1115GC,179,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CACGCAGTCT,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,10,0,0,na,na,na,2022,Leaf
+M1115GF,180,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,TTCACTGTGC,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M1119CC,181,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,TTCCAGGCAG,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M1119CF,182,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CAATGCCTCA,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M1119GC,183,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,AACGAATACC,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,13,1,1,na,na,na,2022,Leaf
+M1119GF,184,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,ATGGTTCACC,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,10,1,1,na,na,na,2022,Leaf
+M1120GC,187,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CCTCATGCTA,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,10,1,1,na,na,na,2022,Leaf
+M1120GF,188,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,CTGATCCATC,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+M1122DC,189,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,TATGCTCTCT,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,1,1,na,na,na,2022,Leaf
+M1122DF,190,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,7,na,ATGTTTAGAC,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,7,0,0,na,na,na,2022,Leaf
+M1132BC,200,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,AAGGTCAATC,T3,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,2,2,na,na,na,2022,Leaf
+M1132BF,201,na,14-dpf,9/28/2022,5/13/2022,Phostrol,Phosphorous acid salts,,na,6,na,ACCTACTTGT,T3,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,10,0,0,na,na,na,2022,Leaf
+B1AST3,111,AFTER BAG1,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,4,7,602,CCGGTGTGAT,T3,B1AST3,na,Bagged,2,Sample,After Spray,na,na,na,14-May,na,na,na,na,na,na,na,2021,Leaf
+B1BST3,115,BEFOREBAG1,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,8,7,634,TGTGTGTAAC,T3,B1BST3,na,Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B2AST3,109,AFTER BAG,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,2,7,586,CCACCCAGTA,T3,B2AST3,na,Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B2BST3,107,BEFOREBAG2,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,12,7,665,GTGAGGGCAA,T3,B2BST3,na,Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B3AST3,110,AFTER BAG,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,3,7,594,TACGCAGCAC,T3,B3AST3,na,Bagged,2,Sample,After Spray,na,na,na,14-May,na,na,na,na,na,na,na,2021,Leaf
+B3BST3,123,BEFOREBAG3,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,C,4,7,603,CAAGGCACAA,T3,B3BST3,na,Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB1AST3,90,NOT BAG,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,6,6,528,GCTGTTTGAC,T3,NB1AST3,na,Not Bagged,2,Sample,After Spray,na,na,na,14-May,na,na,na,na,na,na,na,2021,Leaf
+NB1BST3,99,NOTBAG1,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,4,7,601,CCACAACGAT,T3,NB1BST3,na,Not Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB2AST3,118,NOTBAG,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,11,7,658,TACTACGTGG,T3,NB2AST3,na,Not Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB2BST3,104,NOTBAG2,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,A,9,7,641,TCCTTGTCCT,T3,NB2BST3,na,Not Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB3AST3,112,NOT BAG,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,B,5,7,610,CAGATCCCAA,T3,NB3AST3,na,Not Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB3BST3,92,NOT BAG3,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,H,8,6,544,CGATCACCAC,T3,NB3BST3,na,Not Bagged,2,Sample,Before Spray,na,na,na,13-May,na,na,na,na,na,na,na,2021,Leaf
+NECT3,124,NEC,16-dpf,28-Jan-22,14-May-21,STRATEGO on April 28th - 16dpf,Propiconazole + Trifloxystrobin,C,5,7,611,AGAGATTATG,T3,NECT3,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+P1H12NTC,P1H12NTC,P1H12NTC,P1H12NTC,P1H12NTC,P1H12NTC,na,na,H,12,6,576,CGATTGTTCC,T3,P1H12NTC,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+C112CT4,143,112CC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,12,7,668,CTGATCCATC,T4,112C,Control,na,1,Sample,na,Desirable,1990,32,na,1,11,6,3,na,27.27272727,0.545454545,2021,Leaf
+C120FT4,137,120FC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,6,7,620,CGAAGCATCT,T4,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,11,11,7,na,63.63636364,1,2021,Leaf
+C123HT4,129,123HC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,10,7,651,CTGTGCAACG,T4,123H,Control,na,1,Sample,na,Desirable,2000,22,na,6,9,1,1,na,0,0,2021,Leaf
+C126ET4,145,126EC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,E,2,7,589,CCGCTACGTG,T4,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,13,12,7,na,0,0,2021,Leaf
+C129DT4,135,129DC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,4,7,604,AACCTCGGAT,T4,129D,Control,na,1,Sample,na,Desirable,2008,14,na,3,13,12,7,na,11.11111111,0.111111111,2021,Leaf
+C130BT4,139,130BC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,8,7,636,ATGTAATAGG,T4,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,9,10,5,na,36.36363636,0.818181818,2021,Leaf
+F112CT4,126,112CF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,7,7,627,CGACATTTCT,T4,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,na,1,10,4,2,na,20,0.4,2021,Leaf
+F123HT4,127,123HF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,8,7,635,CCAATCGTGC,T4,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,na,6,11,0,0,na,11.11111111,0.111111111,2021,Leaf
+F126ET4,138,126EF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,7,7,628,GGACGTTAAC,T4,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,na,4,11,9,4,na,53.84615385,0.923076923,2021,Leaf
+F129DT4,125,129DF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,6,7,619,AGCCCTGCTA,T4,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,11,9,4,na,53.84615385,0.923076923,2021,Leaf
+M3112CC,252,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,AGCGACGAAG,T4,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,35,8,na,na,na,2022,Leaf
+M3112CF,253,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GAACACTTTG,T4,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,13,7,na,na,na,2022,Leaf
+M3120FC,260,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,TACAGTTACG,T4,na,Control,na,na,Sample,na,Desirable,na,na,na,na,10,39,6,na,na,na,2022,Leaf
+M3120FF,261,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,ATCCCAGCAT,T4,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,28,6,na,na,na,2022,Leaf
+M3126GC,266,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GTCCGCAAGT,T4,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,30,9,na,na,na,2022,Leaf
+M3126GF,267,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,ATCCGTCTGA,T4,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,20,7,na,na,na,2022,Leaf
+M3129DC,268,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CGTAGAGCTC,T4,na,Control,na,na,Sample,na,Desirable,na,na,na,na,10,5,4,na,na,na,2022,Leaf
+M3129DF,269,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CCTCTGAGAG,T4,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,8,3,3,na,na,na,2022,Leaf
+M3130BC,270,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CCTCGGGTAC,T4,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,23,7,na,na,na,2022,Leaf
+M3130BF,271,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CGTGCACAAT,T4,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,30,8,na,na,na,2022,Leaf
+C119CT4,128,119CC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,9,7,643,TGACGTAGAA,T4,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,11,0,0,na,0,0,2021,Leaf
+C120GT4,146,120GC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,E,3,7,597,TGCCGCCGTA,T4,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,9,1,1,na,14.28571429,0.142857143,2021,Leaf
+C122DT4,134,122DC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,3,7,596,CAAAGTTTGC,T4,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,9,0,0,na,0,0,2021,Leaf
+C125HT4,136,125HC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,5,7,612,TCCATTTCAT,T4,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+C126FT4,144,126FC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,E,1,7,581,TGTCTGACGC,T4,126F,Control,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,36.36363636,0.818181818,2021,Leaf
+C132BT4,142,132BC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,11,7,660,TTCACTGTGC,T4,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,2,1,na,55.55555556,1.111111111,2021,Leaf
+F119CT4,140,119CF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,9,7,644,CTACAATTGA,T4,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,na,1,6,0,0,na,0,0,2021,Leaf
+F120GT4,133,120GF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,2,7,588,CGGCGATGAA,T4,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,9,0,0,na,11.11111111,0.111111111,2021,Leaf
+F122DT4,130,122DF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,11,7,659,CACGCAGTCT,T4,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,na,3,9,0,0,na,0,0,2021,Leaf
+F125HT4,132,125HF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,1,7,580,AGTCGGCATC,T4,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,na,6,9,0,0,na,0,0,2021,Leaf
+F126FT4,131,126FF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,C,12,7,667,CCTCATGCTA,T4,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,9,1,1,na,0,0,2021,Leaf
+F132BT4,141,132BF,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,D,10,7,652,AGGGTACAGG,T4,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,7,2,2,na,18.18181818,0.272727273,2021,Leaf
+M3115GC,254,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GAGCCCAAAG,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+M3115GF,255,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CTTCCCTAAC,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M3119FC,256,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CGATCACCAC,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,2,2,na,na,na,2022,Leaf
+M3119FF,257,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GCCCAAGTTC,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,8,0,0,na,na,na,2022,Leaf
+M3119GC,258,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GATATACCAG,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,0,0,na,na,na,2022,Leaf
+M3119GF,259,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GTAGACATGT,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M3120GC,262,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GAGCCATCTG,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+M3120GF,263,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CTGAGCTCTG,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+M3122DC,264,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,GCTTCCAGAC,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,36,4,na,na,na,2022,Leaf
+M3122DF,265,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,CTTCGACTTT,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,8,1,1,na,na,na,2022,Leaf
+M3132BC,272,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,TAACGTGTGT,T4,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+M3132BF,273,na,11-dpf,10/14/2022,5/27/2022,Absolute Max,triazole + strobilurin,,na,6,na,TTGACCGCGG,T4,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,3,3,na,na,na,2022,Leaf
+NECT4,147,NEC,7-dpf,28-Jan-22,21-May-21,STRATEGO on May 14th - 7dpf,Propiconazole + Trifloxystrobin,E,4,7,605,GTGCTTGTGT,T4,NECT4,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+C112CT5,179,112CC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,12,7,671,CGTGTAGTAG,T5,112C,Control,na,1,Sample,na,Desirable,1990,32,na,1,8,3,3,na,11.11111111,0.222222222,2021,Leaf
+C120FT5,172,120FC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,5,7,615,GTTTCACGCG,T5,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,11,5,3,na,9.090909091,0.090909091,2021,Leaf
+C123HT5,166,123HC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,11,7,662,CAATGCCTCA,T5,123H,Control,na,1,Sample,na,Desirable,2000,22,na,6,9,0,0,na,0,0,2021,Leaf
+C126ET5,162,126EC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,7,7,630,AACTTCACTT,T5,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,10,6,6,na,54.54545455,0.545454545,2021,Leaf
+C129DT5,157,129DC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,2,7,590,CTGGTAAGTC,T5,129D,Control,na,1,Sample,na,Desirable,2008,14,5-Jun,3,8,13,8,na,0,0,2021,Leaf
+C130BT5,167,130BC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,12,7,670,ATGTTTAGAC,T5,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,10,7,5,na,100,1.625,2021,Leaf
+F112CT5,161,112CF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,6,7,622,TCAGGTTGCC,T5,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,na,1,9,1,1,na,28.57142857,0.285714286,2021,Leaf
+F120FT5,169,120FF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,2,7,591,AGAGCTCCTC,T5,120F,Fungicide,na,1,Sample,na,Desirable,2000,22,na,5,11,2,1,na,0,0,2021,Leaf
+F123HT5,168,123HF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,1,7,583,ACCTCAGTCA,T5,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,na,6,9,0,0,na,0,0,2021,Leaf
+F126ET5,177,126EF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,10,7,655,TTGGCGGGTT,T5,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,na,4,11,11,3,na,9.090909091,0.090909091,2021,Leaf
+F129DT5,152,129DF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,9,7,645,GTGGTATGGG,T5,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,13,5,2,na,0,0,2021,Leaf
+F130BT5,173,130BF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,6,7,623,CTGTCAGTGA,T5,130B,Fungicide,na,1,Sample,na,Desirable,1999,23,5-Jun,2,11,2,2,na,15.38461538,0.384615385,2021,Leaf
+J112CC,82,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,GATTCGAGTG,T5,na,Control,na,na,Sample,na,Desirable,na,na,na,na,8,0,0,na,na,na,2022,Leaf
+J112CF,83,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,GCGAGTTCCT,T5,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J120FC,86,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,ACATGCACAT,T5,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,45,9,na,na,na,2022,Leaf
+J120FF,87,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,ACACTGGTCC,T5,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,7,24,6,na,na,na,2022,Leaf
+J126GC,101,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TGTCTGACGC,T5,na,Control,na,na,Sample,na,Desirable,na,na,na,na,14,20,6,na,na,na,2022,Leaf
+J126GF,102,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TAGCGCGAAC,T5,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,13,4,na,na,na,2022,Leaf
+J129DC,103,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,ACCTCAGTCA,T5,na,Control,na,na,Sample,na,Desirable,na,na,na,na,9,15,5,na,na,na,2022,Leaf
+J129DF,104,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GCTATGGAAC,T5,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,9,6,4,na,na,na,2022,Leaf
+J130BC,105,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CTCCACATTC,T5,na,Control,na,na,Sample,na,Desirable,na,na,na,na,9,32,8,na,na,na,2022,Leaf
+J130BF,106,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CCACCCAGTA,T5,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,14,6,na,na,na,2022,Leaf
+C119CT5,176,119CC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,9,7,647,CAATGAGGGA,T5,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,9,0,0,na,37.5,0.375,2021,Leaf
+C120GT5,170,120GC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,3,7,599,GCAATCCTTG,T5,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,11,1,1,na,27.27272727,0.454545455,2021,Leaf
+C122DT5,148,122DC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,5,7,613,TCGGCGATCA,T5,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,7,0,0,na,9.090909091,0.090909091,2021,Leaf
+C125HT5,182,125HC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,H,3,7,600,CGCTGTGGAT,T5,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,11,6,6,na,0,0,2021,Leaf
+C126FT5,164,126FC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,9,7,646,GTTGACCATC,T5,126F,Control,na,1,Sample,na,Elliot,2000,22,5-Jun,4,9,0,0,na,60,0.6,2021,Leaf
+C132BT5,153,132BC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,10,7,653,GGAACACATG,T5,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,50,0.7,2021,Leaf
+F119CT5,160,119CF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,5,7,614,CTGGTGCTGA,T5,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,na,1,11,1,1,na,11.11111111,0.111111111,2021,Leaf
+F120GT5,171,120GF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,4,7,607,TAATCTCGCC,T5,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,9,0,0,na,9.090909091,0.181818182,2021,Leaf
+F122DT5,149,122DF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,6,7,621,GTTTGGCCAC,T5,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,Before Spray Bag 1,3,9,0,0,na,0,0,2021,Leaf
+F125HT5,159,125HF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,4,7,606,ATAGTGTTCG,T5,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,N9CF,6,11,1,1,na,0,0,2021,Leaf
+F126FT5,178,126FF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,11,7,663,AACGAATACC,T5,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,27.27272727,1,2021,Leaf
+F132BT5,163,132BF,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,8,7,638,GTGCGAGGAC,T5,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,7,0,0,na,18.18181818,0.181818182,2021,Leaf
+J115GC,80,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,TATAGGCTCC,T5,na,Control,na,na,Sample,na,Elliot,na,na,na,na,13,27,7,na,na,na,2022,Leaf
+J115GF,81,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,CTCTAACCTC,T5,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,39,5,na,na,na,2022,Leaf
+J119CC,84,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,GGTAACCTCT,T5,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,1,1,na,na,na,2022,Leaf
+J119CF,85,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,8,na,AGCGAACCTG,T5,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J120GC,97,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GATGGTTTCA,T5,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J120GF,98,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TAATTGCAGA,T5,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J122DC,99,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AAGGCGCTCC,T5,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J122DF,100,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AGTCGGCATC,T5,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J132BC,107,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AATCGCCCTT,T5,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J132BF,108,na,6-dpf,9/7/2022,6/2/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CGGCGATGAA,T5,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+B1AST5,165,After Bag 1,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,10,7,654,TTACGTGGCG,T5,B1AST5,na,Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B1BST5,150,BSB1,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,7,7,629,CACGCTATTG,T5,B1BST5,na,Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B2AST5,175,After Bag 2,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,8,7,639,CGTAAGATGC,T5,B2AST5,na,Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+B2BST5,155,BSB2,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,12,7,669,TATGCTCTCT,T5,B2BST5,na,Bagged,2,Sample,Before Spray,na,na,na,"Not Bag After Spray 1, 5-Jun",na,na,na,na,na,na,na,2021,Leaf
+B3AST5,174,After Bag 3,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,G,7,7,631,GAGTCGATCT,T5,B3AST5,na,Bagged,2,Sample,After Spray,na,na,na,5-Jun,na,na,na,na,na,na,na,2021,Leaf
+B3BST5,151,BSB3,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,8,7,637,GACTCGCAAC,T5,B3BST5,na,Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB1AST5,156,NOT BAG 1,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,1,7,582,TAGCGCGAAC,T5,NB1AST5,na,Not Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB1BST5,154,BSNB1,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,E,11,7,661,TTCCAGGCAG,T5,NB1BST5,na,Not Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB2AST5,183,NOT BAG 2,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,H,4,7,608,GGAACGACGT,T5,NB2AST5,na,Not Bagged,2,Sample,After Spray,na,na,na,"Not Bag After Spray 2, 5-Jun",na,na,na,na,na,na,na,2021,Leaf
+NB2BST5,181,BSNB2,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,H,2,7,592,GACAAACCTT,T5,NB2BST5,na,Not Bagged,2,Sample,Before Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB3AST5,158,NOT BAG 3,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,F,3,7,598,CCAGGGACTT,T5,NB3AST5,na,Not Bagged,2,Sample,After Spray,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+NB3BST5,180,BSNB3,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,H,1,7,584,GCTATGGAAC,T5,NB3BST5,na,Not Bagged,2,Sample,Before Spray,na,na,na,Before Spray And Bag 3,na,na,na,na,na,na,na,2021,Leaf
+NTCT5,184,NTC,14-dpf,4-Feb-22,4-Jun-21,STRATEGO on May 14th - 14dpf,Propiconazole + Trifloxystrobin,H,5,7,616,TGAATACCTG,T5,NTCT5,na,na,na,Negative Control,na,na,na,na,NEGATIVE,na,na,na,na,na,na,na,2021,Leaf
+C112CT6,75,112CC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,3,6,503,CATCGCGTTG,T6,112C,Control,na,1,Sample,na,Desirable,1990,32,na,1,11,9,4,na,0,0,2021,Leaf
+C120FT6,78,120FC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,6,6,527,CTAGGATCAC,T6,120F,Control,na,1,Sample,na,Desirable,2000,22,na,5,9,36,7,na,36.36363636,0.818181818,2021,Leaf
+C123HT6,74,123HC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,2,6,495,AACATTGCAG,T6,123H,Control,na,1,Sample,na,Desirable,2000,22,na,6,9,0,0,na,14.28571429,0.142857143,2021,Leaf
+C126ET6,70,126EC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,10,6,558,CCTCGGGTAC,T6,126E,Control,na,1,Sample,na,Desirable,2001,21,na,4,11,5,4,EDGE,0,0,2021,Leaf
+C129DT6,85,129DC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,H,1,6,488,AAGGTCAATC,T6,129D,Control,na,1,Sample,na,Desirable,2008,14,na,3,10,11,10,na,0,0,2021,Leaf
+C130BT6,64,130BC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,4,6,510,GGCAAATACA,T6,130B,Control,na,1,Sample,na,Desirable,1999,23,na,2,11,4,4,na,100,1.1,2021,Leaf
+F112CT6,76,112CF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,4,6,511,CACAAGTATC,T6,112C,Fungicide,na,1,Sample,na,Desirable,1990,32,na,1,10,2,2,na,0,0,2021,Leaf
+F120FT6,63,120FF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,3,6,502,TCATTAGCGT,T6,120F,Fungicide,na,1,Sample,na,Desirable,2000,22,na,5,11,3,2,na,20,0.2,2021,Leaf
+F123HT6,68,123HF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,8,6,542,GAGCCCAAAG,T6,123H,Fungicide,na,1,Sample,na,Desirable,2000,22,na,6,11,0,0,na,0,0,2021,Leaf
+F126ET6,71,126EF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,11,6,566,TTGGGTACAC,T6,126E,Fungicide,na,1,Sample,na,Desirable,2001,21,na,4,13,5,2,EDGE,9.090909091,0.090909091,2021,Leaf
+F129DT6,81,129DF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,9,6,551,CTGAGCTCTG,T6,129D,Fungicide,na,1,Sample,na,Desirable,2008,14,na,3,11,4,4,na,0,0,2021,Leaf
+F130BT6,82,130BF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,10,6,559,CGTGCACAAT,T6,130B,Fungicide,na,1,Sample,na,Desirable,1999,23,na,2,11,4,4,na,36.36363636,0.363636364,2021,Leaf
+J2112CC,110,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CTGGTAAGTC,T6,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,52,8,na,na,na,2022,Leaf
+J2112CF,111,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AGAGCTCCTC,T6,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,22,7,na,na,na,2022,Leaf
+J2120FC,118,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CCAGGGACTT,T6,na,Control,na,na,Sample,na,Desirable,na,na,na,na,12,36,8,na,na,na,2022,Leaf
+J2120FF,119,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GCAATCCTTG,T6,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,24,8,na,na,na,2022,Leaf
+J2126GC,124,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AACCTCGGAT,T6,na,Control,na,na,Sample,na,Desirable,na,na,na,na,12,86,10,na,na,na,2022,Leaf
+J2126GF,125,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GTGCTTGTGT,T6,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,6,4,na,na,na,2022,Leaf
+J2129DC,126,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,ATAGTGTTCG,T6,na,Control,na,na,Sample,na,Desirable,na,na,na,na,9,13,5,na,na,na,2022,Leaf
+J2129DF,127,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TAATCTCGCC,T6,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,9,8,na,na,na,2022,Leaf
+J2130BC,128,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GGAACGACGT,T6,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,26,8,na,na,na,2022,Leaf
+J2130BF,129,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GGCCTATAAG,T6,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,10,5,na,na,na,2022,Leaf
+C119CT6,79,119CC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,7,6,535,TTGGAACGGC,T6,119C,Control,na,1,Sample,na,Elliot,1999,23,na,1,11,1,1,na,0,0,2021,Leaf
+C120GT6,77,120GC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,5,6,519,GCATGCATCC,T6,120G,Control,na,1,Sample,na,Elliot,1999,23,na,5,11,1,1,na,77.77777778,4,2021,Leaf
+C122DT6,72,122DC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,12,6,574,GTGCAACCAA,T6,122D,Control,na,1,Sample,na,Elliot,1999,23,na,3,7,1,1,na,9.090909091,0.090909091,2021,Leaf
+C125HT6,73,125HC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,1,6,487,ATGCTGCAAC,T6,125H,Control,na,1,Sample,na,Elliot,1990,32,na,6,11,0,0,EDGE,0,0,2021,Leaf
+C126FT6,86,126FC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,H,2,6,496,CCGTGACAAC,T6,126F,Control,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,36.36363636,0.454545455,2021,Leaf
+C132BT6,66,132BC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,6,6,526,CACAGTTGAA,T6,132B,Control,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,36.36363636,0.363636364,2021,Leaf
+F119CT6,80,119CF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,8,6,543,CTTCCCTAAC,T6,119C,Fungicide,na,1,Sample,na,Elliot,1999,23,na,1,11,0,0,na,9.090909091,0.090909091,2021,Leaf
+F120GT6,67,120GF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,7,6,534,CGGGTGTTTG,T6,120G,Fungicide,na,1,Sample,na,Elliot,1999,23,na,5,11,0,0,na,18.18181818,0.272727273,2021,Leaf
+F122DT6,84,122DF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,12,6,575,TGAGTGGTCT,T6,122D,Fungicide,na,1,Sample,na,Elliot,1999,23,na,3,9,0,0,na,0,0,2021,Leaf
+F125HT6,69,125HF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,9,6,550,GAGCCATCTG,T6,125H,Fungicide,na,1,Sample,na,Elliot,1990,32,na,6,11,1,1,EDGE,0,0,2021,Leaf
+F126FT6,83,126FF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,G,11,6,567,ACACTATGAA,T6,126F,Fungicide,na,1,Sample,na,Elliot,2000,22,na,4,9,0,0,na,15.38461538,0.384615385,2021,Leaf
+F132BT6,65,132BF,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,F,5,6,518,TGACTAATGG,T6,132B,Fungicide,na,1,Sample,na,Elliot,2000,22,na,2,9,0,0,na,36.36363636,0.363636364,2021,Leaf
+J2115GC,112,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GACAAACCTT,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J2115GF,113,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TAATACGGAT,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J2119CC,114,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TACGCAGCAC,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,0,0,na,na,na,2022,Leaf
+J2119CF,115,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CGCTTAGTGC,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,2,2,na,na,na,2022,Leaf
+J2119GC,116,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CAAAGTTTGC,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J2119GF,117,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TGCCGCCGTA,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J2120GC,120,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CGCTGTGGAT,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,2,2,na,na,na,2022,Leaf
+J2120GF,121,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CCACAACGAT,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,2,2,na,na,na,2022,Leaf
+J2122DC,122,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CCGGTGTGAT,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J2122DF,123,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CAAGGCACAA,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J2132BC,130,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CAGATCCCAA,T6,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J2132BF,131,na,12-dpf,9/9/2022,6/9/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AGAGATTATG,T6,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,12,2,1,na,na,na,2022,Leaf
+NECT6,87,NEC,21-dpf,20-Jan-22,25-Jun-21,SuperTin 4L + Phostrol on June 4th - 21dpf,Triphenyltin Hydroxide + Phosphorus acid salts,H,3,6,504,ATGTCGAATA,T6,NECT6,na,na,na,Negative Control,na,na,na,na,na,na,na,na,na,na,na,na,2021,Leaf
+J3112CC,156,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,ATGTAATAGG,T7,na,Control,na,na,Sample,na,Desirable,na,na,na,na,12,26,10,na,na,na,2022,Leaf
+J3112CF,157,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GACTCGCAAC,T7,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,18,5,na,na,na,2022,Leaf
+J3120FC,164,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,CTACAATTGA,T7,na,Control,na,na,Sample,na,Desirable,na,na,na,na,6,13,4,na,na,na,2022,Leaf
+J3120FF,165,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GTGGTATGGG,T7,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,8,9,4,na,na,na,2022,Leaf
+J3126GC,168,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GTGACGTTAG,T7,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,16,6,na,na,na,2022,Leaf
+J3126GF,169,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,ATGGAAGGTG,T7,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,8,5,na,na,na,2022,Leaf
+J3129DC,170,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,CCGGCTTATG,T7,na,Control,na,na,Sample,na,Desirable,na,na,na,na,12,0,0,na,na,na,2022,Leaf
+J3129DF,171,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,CTGTGCAACG,T7,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,9,3,2,na,na,na,2022,Leaf
+J3130BC,172,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,AGGGTACAGG,T7,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,11,5,na,na,na,2022,Leaf
+J3130BF,173,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GGAACACATG,T7,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,11,5,na,na,na,2022,Leaf
+J3115GC,158,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GTGCGAGGAC,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J3115GF,159,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,CGTAAGATGC,T7,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J3119CC,160,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GCAGAGAGGC,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J3119CF,161,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,TCCTTGTCCT,T7,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,13,0,0,na,na,na,2022,Leaf
+J3119GC,162,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,ACGATTCGAG,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,6,0,0,na,na,na,2022,Leaf
+J3119GF,163,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,TGACGTAGAA,T7,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,0,0,na,na,na,2022,Leaf
+J3120GC,166,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,GTTGACCATC,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J3120GF,167,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,CAATGAGGGA,T7,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,0,0,na,na,na,2022,Leaf
+J3132BC,174,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,TTACGTGGCG,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,2,1,na,na,na,2022,Leaf
+J3132BC2,175,na,17-dpf,9/19/2022,6/30/2022,Miravis Top,Adepidyn + difenoconazole,,na,7,na,TTGGCGGGTT,T7,na,Control,na,na,Sample,na,Elliot,na,na,na,na,11,2,1,na,na,na,2022,Leaf
+JL112CC,133,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TCGGCGATCA,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,34,12,na,na,na,2022,Leaf
+JL112CF,134,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CTGGTGCTGA,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,23,10,na,na,na,2022,Leaf
+JL120BC,152,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GACCTACCGC,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,11,4,na,na,na,2022,Leaf
+JL120FC,141,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GTTTGGCCAC,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,5,20,4,na,na,na,2022,Leaf
+JL120FF,142,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TCAGGTTGCC,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,18,6,na,na,na,2022,Leaf
+JL126GC,147,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CGACATTTCT,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,24,10,na,na,na,2022,Leaf
+JL126GF,148,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GGACGTTAAC,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,11,8,na,na,na,2022,Leaf
+JL129DC,149,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CACGCTATTG,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,2,2,na,na,na,2022,Leaf
+JL129DF,150,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AACTTCACTT,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,9,32,8,na,na,na,2022,Leaf
+JL130BF,151,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GAGTCGATCT,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,13,20,8,na,na,na,2022,Leaf
+N112CC,275,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TGGGTAGATC,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,12,34,na,na,na,2022,Nut
+N112CF,276,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,AGCAATCGGT,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,10,23,na,na,na,2022,Nut
+N120FC,281,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,GGTTTCTATC,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,5,20,4,na,na,na,2022,Nut
+N120FF,282,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TGGTTATGGC,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,18,6,na,na,na,2022,Nut
+N126EF,290,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,TCTCCGTTCC,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,na,na,na,na,na,na,2022,na
+N126GC,287,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TGAGTGGTCT,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,11,24,10,na,na,na,2022,Nut
+N126GF,289,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,GACGCACTAA,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,10,11,8,na,na,na,2022,Leaf
+N129DF,291,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,CTGATTACGA,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,9,32,8,na,na,na,2022,Leaf
+N130BC,292,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,TAAGGCATCG,T8,na,Control,na,na,Sample,na,Desirable,na,na,na,na,13,20,8,na,na,na,2022,Leaf
+N130BF,293,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,ACCCATACAG,T8,na,Fungicide,na,na,Sample,na,Desirable,na,na,na,na,11,11,4,na,na,na,2022,Leaf
+JL115GC,135,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GTTTCACGCG,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,0,0,na,na,na,2022,Leaf
+JL115GF,136,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TGAATACCTG,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,10,0,0,na,na,na,2022,Leaf
+JL119CC,139,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,AGCCCTGCTA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,2,2,na,na,na,2022,Leaf
+JL119CF,140,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CGAAGCATCT,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,1,1,na,na,na,2022,Leaf
+JL119GC,137,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TACTCTCTTA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,6,3,na,na,na,2022,Leaf
+JL119GF,138,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CTCCCACTAG,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,3,2,na,na,na,2022,Leaf
+JL120GC,143,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CTGTCAGTGA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,1,1,na,na,na,2022,Leaf
+JL120GF,144,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TCATTCCACT,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,13,0,0,na,na,na,2022,Leaf
+JL122DC,145,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GGCCAAGGAA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,7,1,1,na,na,na,2022,Leaf
+JL122DF,146,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,GTCACATCAC,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,1,1,na,na,na,2022,Leaf
+JL132BC,153,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,CCAGTGGATA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,2,1,na,na,na,2022,Leaf
+JL132BF,154,na,17-dpf,9/14/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,7,na,TGTGTGTAAC,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,1,1,na,na,na,2022,Leaf
+N115GC,277,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,GTTGGACGAA,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,8,0,0,na,na,na,2022,Nut
+N115GF,278,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TTGGGTACAC,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,10,0,0,na,na,na,2022,Nut
+N119CF,279,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,ACACTATGAA,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,3,2,na,na,na,2022,Nut
+N119GF,280,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,ACGGAAATCC,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,1,1,na,na,na,2022,Nut
+N120GC,283,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TCGGTTACGC,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,1,1,na,na,na,2022,Nut
+N120GF,284,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,CGAGGTTCTG,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,13,0,0,na,na,na,2022,Nut
+N122DC,285,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,TGCTACAGAC,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,7,1,1,na,na,na,2022,Nut
+N122DF,286,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,6,na,GTGCAACCAA,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,9,1,1,na,na,na,2022,Nut
+N132BC,294,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,TCTGAATGGT,T8,na,Control,na,na,Sample,na,Elliot,na,na,na,na,9,2,1,na,na,na,2022,Leaf
+N132BF,295,na,17-dpf,10/24/2022,7/15/2022,supertin + elast,triphenyltin hydroxide + dodine,,na,5,na,CGCACTACGC,T8,na,Fungicide,na,na,Sample,na,Elliot,na,na,na,na,11,1,1,na,na,na,2022,Leaf
