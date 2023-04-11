@@ -42,12 +42,12 @@ This script will create an OTU table that will be used for downstream analysis. 
 
 #
 Combined, these steps provide the following output files that can be utilized in a phyloseq object in R:
-- OTU table
-- ITS taxonomy files (from SINTAX and NBC)
-- otus.fasta file
+- [OTU table](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/otu.table.csv)
+- ITS taxonomy files (from SINTAX and [NBC](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/NBC.csv))
+- [otus.fasta](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/otus_R1.fasta) file
 
 # R Analysis
-R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a metadata file will be necessary to run analysis. The R Markdown file will execute the following steps:
+R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The R Markdown file will execute the following steps:
 - Load dependencies
 - Utilize a colorblind palette
 - Load above files to create a phyloseq object
@@ -58,3 +58,5 @@ R Analysis for this project starts with the creation of a phyloseq object. In ad
 - Cumulative sum scaling (CSS) Normalization
 - Beta diversity analysis, including a principal coordinates analysis (PCoA) plot with Bray-Curtis distances
 - PERMANOVA to test for differences in centroids
+
+The figures that will be generated in this analysis are located here.
