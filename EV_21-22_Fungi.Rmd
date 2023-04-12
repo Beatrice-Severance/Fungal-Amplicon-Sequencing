@@ -1,0 +1,434 @@
+---
+title: "EV_21-22_Fungi"
+author: "Beatrice Severance, Zachary Noel"
+date: "2023-04-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+## Load Dependencies
+```{r echo = T, error=FALSE, warning=FALSE, message=FALSE}
+library(phyloseq)
+library(vegan)
+library(tidyverse)
+library(ggplot2)
+library(Biostrings)
+library(ggpubr)
+library(decontam)
+library(metagenomeSeq)
+library(indicspecies)
+```
+
+## Colorblind Palette
+```{r echo = T}
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+```
+
+## Load files from HPC to create a phyloseq object
+```{r echo = TRUE}
+# Taxonomy 
+#Edit the taxonomy rds
+nbc.tax.fungi <- read.csv("phyloseq_input/NBC.csv")
+
+nbc.tax.fungi <- as.data.frame(nbc.tax.fungi)
+nbc.tax.fungi$OTU <- sprintf("FOTU_%s", seq(1:nrow(nbc.tax.fungi)))
+rownames(nbc.tax.fungi) <- nbc.tax.fungi$OTU
+nbc.tax.fungi$Kingdom <- gsub('k__','', nbc.tax.fungi$Kingdom)
+nbc.tax.fungi$Phylum <- gsub('p__','', nbc.tax.fungi$Phylum)
+nbc.tax.fungi$Class <- gsub('c__','', nbc.tax.fungi$Class)
+nbc.tax.fungi$Order <- gsub('o__','', nbc.tax.fungi$Order)
+nbc.tax.fungi$Family <- gsub('f__','', nbc.tax.fungi$Family)
+nbc.tax.fungi$Genus <- gsub('g__','', nbc.tax.fungi$Genus)
+nbc.tax.fungi$Species <- gsub('s__','', nbc.tax.fungi$Species)
+
+nbc.tax.fungi <- replace(nbc.tax.fungi, is.na(nbc.tax.fungi), "unidentified")
+
+nbc.tax.fungi$Lowest_Taxnomic_Rank <- ifelse(nbc.tax.fungi$Phylum == "unidentified", nbc.tax.fungi$Kingdom,
+                                             ifelse(nbc.tax.fungi$Class == "unidentified", nbc.tax.fungi$Phylum,
+                                                    ifelse(nbc.tax.fungi$Order == "unidentified", nbc.tax.fungi$Class,
+                                                           ifelse(nbc.tax.fungi$Family == "unidentified", nbc.tax.fungi$Order,
+                                                                  ifelse(nbc.tax.fungi$Genus == "unidentified", nbc.tax.fungi$Family,
+                                                                         ifelse(nbc.tax.fungi$Species == "unidentified", nbc.tax.fungi$Genus, 
+                                                                                paste(nbc.tax.fungi$Genus, nbc.tax.fungi$Species, sep = "_")))))))
+
+nbc.tax.fungi$Label <- paste(nbc.tax.fungi$OTU, nbc.tax.fungi$Lowest_Taxnomic_Rank, sep = "_")
+
+#create taxonomy variable
+tax <- nbc.tax.fungi
+head(tax)
+tax$OTU <- rownames(tax)
+TAX.fungi <- phyloseq::tax_table(as.matrix(tax))
+
+# OTU Table 
+table <- read.csv("phyloseq_input/otu.table.csv")
+rownames(table) <- table$OTU
+table <- table[,-1]
+OTU.fungi <- phyloseq::otu_table(table, taxa_are_rows = TRUE)
+
+# Metadata 
+samples <- read.csv("phyloseq_input/21-22_Metadata.csv", na.strings = "na")
+rownames(samples) <- samples$Sample_ID #row names must match OTU table headers
+SAMP.fungi <- phyloseq::sample_data(samples)
+
+# Fasta File
+FASTA.fungi <- Biostrings::readDNAStringSet("phyloseq_input/otus_R1.fasta", format="fasta", seek.first.rec=TRUE, use.names=TRUE)
+
+# Phyloseq Object Creation
+phyloseq.start <- phyloseq(SAMP.fungi, TAX.fungi, OTU.fungi, FASTA.fungi)
+
+#save phyloseq object as an rds
+saveRDS(phyloseq.start, "phyloseq_input/21-22-fungi-phyloseq.rds")
+phyloseq.start <- readRDS("phyloseq_input/21-22-fungi-phyloseq.rds")
+```
+
+## Decontamination
+```{r echo = T}
+#Use the full dataset to call contaminants, then remove them, if they exist in the non plant OTU dataset
+sample_data(phyloseq.start)$is.neg <- sample_data(phyloseq.start)$Control == "Negative Control"
+contamdf.prev <- isContaminant(phyloseq.start, method="prevalence", neg="is.neg", threshold = 0.1, normalize = TRUE)
+badTaxa <- rownames(contamdf.prev[contamdf.prev$contaminant == TRUE,])
+
+print(badTaxa)
+goodTaxa <- setdiff(taxa_names(phyloseq.start), badTaxa)
+phyloseq.nobad <- prune_taxa(goodTaxa, phyloseq.start)
+```
+
+```{r echo = T}
+# transform data to presence absence
+ps.pa <- transform_sample_counts(phyloseq.start, function(abund) 1*(abund>0))
+
+# making a dataframe for both negative and positive samples.
+ps.pa.neg <- prune_samples(sample_data(ps.pa)$Control == "Negative Control", ps.pa)
+ps.pa.pos <- prune_samples(sample_data(ps.pa)$Control == "Sample", ps.pa)
+
+# Make data.frame of prevalence in positive and negative samples
+df.pa <- data.frame(pa.pos=taxa_sums(ps.pa.pos), pa.neg=taxa_sums(ps.pa.neg),
+                    contaminant=contamdf.prev$contaminant)
+decontaminated <- ggplot(data=df.pa, aes(x=pa.neg, y=pa.pos, color=contaminant)) + geom_point() +
+  xlab("Prevalence (Negative Controls)") + ylab("Prevalence (True Samples)") + 
+  theme_classic() + 
+  scale_color_manual(values = c(cbbPalette[[1]], cbbPalette[[2]]))
+  
+```
+
+## Subsetting to only kingdom fungi
+```{r echo = T}
+physeq.clean.samples <- phyloseq.nobad %>% 
+  phyloseq::subset_taxa(Kingdom == "Fungi") %>% 
+  subset_samples(Control == "Sample") %>%
+  phyloseq::filter_taxa(function(x) sum(x) > 0, TRUE)
+```
+## Remove samples with less than 1000 reads
+```{r echo = T}
+phyloseq.clean.filt <- physeq.clean.samples %>% 
+  subset_samples(Sample_ID != "C122DT5") %>% #remove outlier (strange taxa)
+  prune_samples(sample_sums(.) > 5000, .) %>% # remove samples below 10,000 reads
+  phyloseq::filter_taxa(function(x) sum(x) > 0, TRUE) # remove taxa with less than 1 reads
+```
+
+## Save a clean RDS file
+```{r}
+saveRDS(phyloseq.clean.filt, "phyloseq_input/21-22-fungi-phyloseq-clean.rds")
+phyloseq.clean.filt <- readRDS("phyloseq_input/21-22-fungi-phyloseq-clean.rds")
+```
+
+## General Statistics
+```{r echo = T}
+
+sample_sums(phyloseq.clean.filt) %>%
+  sort()
+
+# New number of total reads
+sum(sample_sums(phyloseq.clean.filt)) # 20,543,268
+
+# Mean and median read depth 
+mean(sample_sums(phyloseq.clean.filt)) # 55,522
+
+median(sample_sums(phyloseq.clean.filt)) # 53,944
+
+# Histogram including median read depth
+read.depths <- data.frame(sample_sums(phyloseq.clean.filt))
+colnames(read.depths) <- "read.depth"
+read.depth.plot <- ggplot(read.depths, aes(read.depth)) +
+  geom_histogram(fill = cbbPalette[[3]], color = "black") + 
+  geom_vline(xintercept = median(sample_sums(phyloseq.clean.filt)), linetype = "dashed") + 
+  theme_classic() + 
+  xlab("Read Depth")
+read.depth.plot
+```
+
+## Rarefaction
+```{r echo = T}
+sam.data <- data.frame(phyloseq.clean.filt@sam_data)
+sam.data$Sample_ID <- sam.data$Sample_ID
+pOTU.table <- phyloseq.clean.filt@otu_table
+S <- specnumber(t(pOTU.table)) # observed number of species
+raremax <- min(rowSums(t(pOTU.table)))
+Srare <- rarefy(t(pOTU.table), raremax)
+rare.fun <- rarecurve(t(pOTU.table), step = 1000, sample = raremax, col = "blue", cex = 0.6)
+
+prok.rare.curve.extract <- NULL
+for(i in 1:length(rare.fun)){
+  sample.200 <- data.frame(rare.spec = rare.fun[[i]])
+  sample.200$read_depth <- attr(rare.fun[[i]], "Subsample")
+  sample.200$Sample_ID <- rownames(t(pOTU.table[,i]))
+  prok.rare.curve.extract <- rbind.data.frame(prok.rare.curve.extract, sample.200)
+}
+prok.rare.curve.extract2 <- left_join(sam.data, prok.rare.curve.extract, by = "Sample_ID")
+
+rare.curve <- ggplot(prok.rare.curve.extract2, aes(x = read_depth, y = rare.spec, group = Sample_ID)) + 
+  #geom_point() +
+  geom_line(color = "grey") + 
+  xlab("Reads") + 
+  ylab("Number of OTUs") + 
+  theme_classic() + 
+  geom_vline(xintercept = median(sample_sums(phyloseq.start)), linetype = "dashed")
+rare.curve
+```
+
+## Alpha Diversity
+```{r echo = T}
+phyloseq.clean.filt@sam_data$shannon <- estimate_richness(phyloseq.clean.filt, measures=c("Shannon"))$Shannon
+phyloseq.clean.filt@sam_data$invsimpson <- estimate_richness(phyloseq.clean.filt, measures=c("InvSimpson"))$InvSimpson
+phyloseq.clean.filt@sam_data$richness <- estimate_richness(phyloseq.clean.filt, measures=c("Observed"))$Observed
+phyloseq.clean.filt@sam_data$even <- phyloseq.clean.filt@sam_data$shannon/log(phyloseq.clean.filt@sam_data$richness)
+
+sample.data.fungi <- data.frame(phyloseq.clean.filt@sam_data)
+```
+### Shannon 2021
+```{r echo = T}
+linear.model <- lm(shannon ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2021",])
+anova(linear.model)
+
+shannon_21 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
+ggplot(aes(x = Time, y = shannon, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Shannon 2022
+```{r echo = T}
+linear.model <- lm(shannon ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2022",])
+anova(linear.model)
+
+shannon_22 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
+ggplot(aes(x = Time, y = shannon, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Invsimpson 2021
+```{r echo = T}
+linear.model <- lm(invsimpson ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2021",])
+anova(linear.model)
+
+invsimp_21 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
+ggplot(aes(x = Time, y = invsimpson, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Invsimpson 2022
+```{r echo = T}
+linear.model <- lm(invsimpson ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2022",])
+anova(linear.model)
+
+invsimp_22 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
+ggplot(aes(x = Time, y = invsimpson, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Richness 2021
+```{r echo = T}
+linear.model <- lm(richness ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2021",])
+anova(linear.model)
+
+rich_21 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
+ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Richness 2022
+```{r echo = T}
+linear.model <- lm(richness ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2022",])
+anova(linear.model)
+
+rich_22 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
+ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Evenness 2021
+```{r echo = T}
+linear.model <- lm(even ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2021",])
+anova(linear.model)
+
+even_21 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
+ggplot(aes(x = Time, y = even, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### Evenness 2022
+```{r echo = T}
+linear.model <- lm(even ~ Fungicide*Time*Cultivar, data = sample.data.fungi[sample.data.fungi$Year == "2022",])
+anova(linear.model)
+
+even_22 <- sample.data.fungi %>%
+  subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
+ggplot(aes(x = Time, y = even, fill = Fungicide)) +
+  geom_boxplot()+
+  theme_classic()+
+  facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+```
+### 2021 Arranged Plot
+```{r echo = T}
+alpha_2021 <- ggpubr::ggarrange(shannon_21,
+                               invsimp_21,
+                               rich_21,
+                               even_21,
+                               labels = "auto",
+                               nrow = 2, ncol = 2, common.legend = TRUE)
+alpha_2021
+```
+### 2022 Arranged Plot
+```{r echo = T}
+alpha_2022 <- ggpubr::ggarrange(shannon_22,
+                               invsimp_22,
+                               rich_22,
+                               even_22,
+                               labels = "auto",
+                               nrow = 2, ncol = 2, common.legend = TRUE)
+alpha_2022
+```
+
+## CSS Normalization
+```{r echo = T}
+MGS <- phyloseq_to_metagenomeSeq(phyloseq.clean.filt)
+p <- metagenomeSeq::cumNormStatFast(MGS)
+MGS <- metagenomeSeq::cumNorm(MGS, p =p)
+metagenomeSeq::normFactors(MGS) # exports the normalized factors for each sample
+norm.fungi <- metagenomeSeq::MRcounts(MGS, norm = T)
+norm.fungi.OTU <- phyloseq::otu_table(norm.fungi, taxa_are_rows = TRUE)
+
+physeq.css <- phyloseq::phyloseq(norm.fungi.OTU, phyloseq.clean.filt@sam_data, phyloseq.clean.filt@tax_table, phyloseq.clean.filt@refseq)
+```
+
+## Save a clean RDS file
+```{r}
+saveRDS(physeq.css, "phyloseq_input/21-22-fungi-phyloseq-clean-CSS.rds")
+physeq.css <- readRDS("phyloseq_input/21-22-fungi-phyloseq-clean-CSS.rds")
+```
+
+
+## Beta Diversity: PCoA and PERMANOVA
+```{r echo = T}
+#Write a function
+FilterGroup <- function(physeq, var1, var2){
+  physeq1 <-subset(sample_data(physeq),Year==var1)
+  physeq2<-subset(sample_data(physeq1),Time==var2)
+  physeq3<-subset(sample_data(physeq2),Fungicide %in% c("Fungicide", "Control"))
+  phy_subset<-merge_phyloseq(tax_table(physeq),
+                             otu_table(physeq),
+                             refseq(physeq),
+                             physeq3)
+  otu_table(phy_subset) <- otu_table(phy_subset)[which(
+    rowSums(otu_table(phy_subset)) > 0),] 
+  ordination.pcoa <- ordinate(phy_subset, "PCoA", "bray") # calculate the resemblance and ordinate using PCoA
+  points <- as.data.frame(ordination.pcoa$vectors) # positions of your points on the PCoA graph
+  pcoavalues <- ordination.pcoa$values #values to calculate the variance explained on each axis (dimension)
+  axis1 <- round(pcoavalues[1,2]*100, 2)
+  axis2 <- round(pcoavalues[2,2]*100, 2)
+  points$Sample_ID <- rownames(points)
+  points2 <- left_join(points, as.data.frame(phy_subset@sam_data), by = "Sample_ID")
+
+# PCoA Code
+  pcoa <- ggplot(points2, aes(x = Axis.1, y = Axis.2, color = Fungicide, shape = Cultivar)) +
+    theme_classic() +
+    xlab(paste("PCoA1 -", axis1, "%")) +
+    ylab(paste("PCoA2 -", axis2, "%")) +
+    geom_point(size = 4) +
+    scale_color_manual(values = cbbPalette)
+  pcoa
+
+# PERMANOVA Code
+  prok.dist.bray = phyloseq::distance(phy_subset, "bray") # create bray-curtis distance matrix
+  set.seed(123454245)
+  permanovaresult <- adonis2(prok.dist.bray~Fungicide*Cultivar, as(sample_data(phy_subset), "data.frame"), permutations = 999)
+  returnlist <- list(pcoa, permanovaresult)
+    return(returnlist)
+}
+
+## Dispersion (incorporate into function later)
+#```{r}
+#EVdisp <- betadisper(prok.dist.bray, FC.css@sam_data$Fungicide)
+#permutest(EVdisp)
+#```
+
+#Use function to generate PCoA and PERMANOVA
+
+#2021
+T1_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T1")
+T2_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T2")
+T3_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T3")
+T4_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T4")
+T5_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T5")
+T6_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T6")
+
+pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
+                               T2_2021[[1]],
+                               T3_2021[[1]],
+                               T4_2021[[1]],
+                               T5_2021[[1]],
+                               T6_2021[[1]],
+                               labels = "auto",
+                               nrow = 2, ncol = 3, common.legend = TRUE)
+pcoa_2021
+
+#T5_2021[[1]]$data
+
+#2022
+T1_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T1")
+T2_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T2")
+T3_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T3")
+T4_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T4")
+T5_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T5")
+T6_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T6")
+T7_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T7")
+T8_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T8")
+
+pcoa_2022 <- ggpubr::ggarrange(T1_2022[[1]],
+                               T2_2022[[1]],
+                               T3_2022[[1]],
+                               T4_2022[[1]],
+                               T5_2022[[1]],
+                               T6_2022[[1]],
+                               T7_2022[[1]],
+                               T8_2022[[1]],
+                               labels = "auto",
+                               nrow = 2, ncol = 4, common.legend = TRUE)
+pcoa_2022
+```
