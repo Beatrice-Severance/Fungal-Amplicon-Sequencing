@@ -47,7 +47,7 @@ Combined, these steps provide the following output files that can be utilized in
 - [otus.fasta](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/otus_R1.fasta) file
 
 # R Analysis
-R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The R Markdown file will execute the following steps:
+R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.Rmd) will execute the following steps:
 - Load dependencies
 - Utilize a colorblind palette
 - Load above files to create a phyloseq object
@@ -59,4 +59,4 @@ R Analysis for this project starts with the creation of a phyloseq object. In ad
 - Beta diversity analysis, including a principal coordinates analysis (PCoA) plot with Bray-Curtis distances
 - PERMANOVA to test for differences in centroids
 
-The figures that will be generated in this analysis are located here.
+The rendered HTML file for the data can be viewed [here](https://htmlpreview.github.io/?https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.html).
