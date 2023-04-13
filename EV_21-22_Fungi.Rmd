@@ -314,6 +314,7 @@ alpha_2021 <- ggpubr::ggarrange(shannon_21,
                                nrow = 2, ncol = 2, common.legend = TRUE)
 alpha_2021
 ```
+
 ### 2022 Arranged Plot
 ```{r echo = T}
 alpha_2022 <- ggpubr::ggarrange(shannon_22,
