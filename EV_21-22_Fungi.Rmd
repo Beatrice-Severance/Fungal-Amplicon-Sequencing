@@ -2,7 +2,9 @@
 title: "EV_21-22_Fungi"
 author: "Beatrice Severance, Zachary Noel"
 date: "2023-04-13"
-output: html_document
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
