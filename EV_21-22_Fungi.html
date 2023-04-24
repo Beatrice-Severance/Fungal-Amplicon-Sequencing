@@ -1040,27 +1040,112 @@ FilterGroup &lt;- function(physeq, var1, var2){
   prok.dist.bray = phyloseq::distance(phy_subset, &quot;bray&quot;) # create bray-curtis distance matrix
   set.seed(123454245)
   permanovaresult &lt;- adonis2(prok.dist.bray~Fungicide*Cultivar, as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+  
+# Beta Dispersion Values
+#  dispersion &lt;- betadisper(prok.dist.bray, phy_subset)
+#  permutest(dispersion)
   returnlist &lt;- list(pcoa, permanovaresult)
     return(returnlist)
 }
-
-## Dispersion (incorporate into function later)
-#```{r}
-#EVdisp &lt;- betadisper(prok.dist.bray, FC.css@sam_data$Fungicide)
-#permutest(EVdisp)
-#```
 
 #Use function to generate PCoA and PERMANOVA
 
 #2021
 T1_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T1&quot;)
-T2_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T2&quot;)
-T3_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T3&quot;)
-T4_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T4&quot;)
-T5_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T5&quot;)
-T6_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T6&quot;)
-
-pcoa_2021 &lt;- ggpubr::ggarrange(T1_2021[[1]],
+T1_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1  0.25696 0.08445 2.0733  0.043 *
+## Cultivar            1  0.15628 0.05136 1.2609  0.235  
+## Fungicide:Cultivar  1  0.15089 0.04959 1.2174  0.278  
+## Residual           20  2.47878 0.81461                
+## Total              23  3.04291 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T2_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T2&quot;)
+T2_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)   
+## Fungicide           1   0.2051 0.04868 1.2790  0.249   
+## Cultivar            1   0.0894 0.02121 0.5573  0.687   
+## Fungicide:Cultivar  1   0.7120 0.16896 4.4397  0.007 **
+## Residual           20   3.2072 0.76115                 
+## Total              23   4.2137 1.00000                 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T3_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T3&quot;)
+T3_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.06976 0.06160 1.4774  0.165
+## Cultivar            1  0.08298 0.07327 1.7573  0.115
+## Fungicide:Cultivar  1  0.03535 0.03122 0.7487  0.609
+## Residual           20  0.94436 0.83391              
+## Total              23  1.13245 1.00000</code></pre>
+<pre class="r"><code>T4_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T4&quot;)
+T4_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1  0.22589 0.10617 2.4279  0.034 *
+## Cultivar            1  0.07288 0.03425 0.7833  0.544  
+## Fungicide:Cultivar  1  0.15411 0.07243 1.6564  0.139  
+## Residual           18  1.67475 0.78714                
+## Total              21  2.12763 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T5_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T5&quot;)
+T5_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1  0.18953 0.12170 2.9681  0.012 *
+## Cultivar            1  0.13737 0.08821 2.1512  0.068 .
+## Fungicide:Cultivar  1  0.01720 0.01104 0.2693  0.969  
+## Residual           19  1.21325 0.77905                
+## Total              22  1.55735 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T6_2021 &lt;- FilterGroup(physeq.css, var1 = &quot;2021&quot;, var2 = &quot;T6&quot;)
+T6_2021[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)    
+## Fungicide           1  0.19801 0.17628 4.6407  0.001 ***
+## Cultivar            1  0.05858 0.05215 1.3729  0.205    
+## Fungicide:Cultivar  1  0.01332 0.01186 0.3121  0.963    
+## Residual           20  0.85337 0.75971                  
+## Total              23  1.12327 1.00000                  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>pcoa_2021 &lt;- ggpubr::ggarrange(T1_2021[[1]],
                                T2_2021[[1]],
                                T3_2021[[1]],
                                T4_2021[[1]],
@@ -1070,19 +1155,126 @@ pcoa_2021 &lt;- ggpubr::ggarrange(T1_2021[[1]],
                                nrow = 2, ncol = 3, common.legend = TRUE)
 pcoa_2021</code></pre>
 <p><img src="data:image/png;base64,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" /><!-- --></p>
-<pre class="r"><code>#T5_2021[[1]]$data
-
-#2022
+<pre class="r"><code>#2022
 T1_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T1&quot;)
-T2_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T2&quot;)
-T3_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T3&quot;)
-T4_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T4&quot;)
-T5_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T5&quot;)
-T6_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T6&quot;)
-T7_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T7&quot;)
-T8_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T8&quot;)
-
-pcoa_2022 &lt;- ggpubr::ggarrange(T1_2022[[1]],
+T1_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.17568 0.05562 0.9737  0.406
+## Cultivar            1  0.12908 0.04087 0.7154  0.709
+## Fungicide:Cultivar  1  0.14746 0.04669 0.8173  0.591
+## Residual           15  2.70624 0.85682              
+## Total              18  3.15846 1.00000</code></pre>
+<pre class="r"><code>T2_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T2&quot;)
+T2_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.00872 0.01179 0.2594  0.882
+## Cultivar            1  0.04757 0.06431 1.4151  0.240
+## Fungicide:Cultivar  1  0.01114 0.01506 0.3313  0.846
+## Residual           20  0.67227 0.90885              
+## Total              23  0.73969 1.00000</code></pre>
+<pre class="r"><code>T3_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T3&quot;)
+T3_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.06376 0.04793 1.0852  0.341
+## Cultivar            1  0.05470 0.04112 0.9310  0.417
+## Fungicide:Cultivar  1  0.03672 0.02760 0.6249  0.670
+## Residual           20  1.17511 0.88335              
+## Total              23  1.33029 1.00000</code></pre>
+<pre class="r"><code>T4_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T4&quot;)
+T4_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.02373 0.03762 0.7746  0.530
+## Cultivar            1  0.02447 0.03879 0.7987  0.507
+## Fungicide:Cultivar  1  0.03116 0.04939 1.0171  0.365
+## Residual           18  0.55143 0.87419              
+## Total              21  0.63078 1.00000</code></pre>
+<pre class="r"><code>T5_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T5&quot;)
+T5_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1  0.20682 0.07848 1.7602  0.167  
+## Cultivar            1  0.25179 0.09555 2.1430  0.107  
+## Fungicide:Cultivar  1  0.29662 0.11256 2.5245  0.052 .
+## Residual           16  1.87996 0.71341                
+## Total              19  2.63519 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T6_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T6&quot;)
+T6_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1  0.07463 0.04349 0.9510  0.395  
+## Cultivar            1  0.18527 0.10796 2.3607  0.072 .
+## Fungicide:Cultivar  1  0.04361 0.02541 0.5557  0.699  
+## Residual           18  1.41265 0.82314                
+## Total              21  1.71617 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>T7_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T7&quot;)
+T7_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)
+## Fungicide           1  0.10427 0.08006 1.6881  0.135
+## Cultivar            1  0.11598 0.08905 1.8777  0.117
+## Fungicide:Cultivar  1  0.09382 0.07204 1.5190  0.171
+## Residual           16  0.98828 0.75884              
+## Total              19  1.30236 1.00000</code></pre>
+<pre class="r"><code>T8_2022 &lt;- FilterGroup(physeq.css, var1 = &quot;2022&quot;, var2 = &quot;T8&quot;)
+T8_2022[[2]]</code></pre>
+<pre><code>## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), &quot;data.frame&quot;), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(&gt;F)  
+## Fungicide           1   0.1294 0.02863 1.2898  0.237  
+## Cultivar            1   0.1997 0.04420 1.9909  0.115  
+## Fungicide:Cultivar  1   0.3775 0.08356 3.7639  0.023 *
+## Residual           38   3.8113 0.84361                
+## Total              41   4.5179 1.00000                
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<pre class="r"><code>pcoa_2022 &lt;- ggpubr::ggarrange(T1_2022[[1]],
                                T2_2022[[1]],
                                T3_2022[[1]],
                                T4_2022[[1]],

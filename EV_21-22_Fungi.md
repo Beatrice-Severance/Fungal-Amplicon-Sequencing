@@ -838,26 +838,147 @@ FilterGroup <- function(physeq, var1, var2){
   prok.dist.bray = phyloseq::distance(phy_subset, "bray") # create bray-curtis distance matrix
   set.seed(123454245)
   permanovaresult <- adonis2(prok.dist.bray~Fungicide*Cultivar, as(sample_data(phy_subset), "data.frame"), permutations = 999)
+  
+# Beta Dispersion Values
+#  dispersion <- betadisper(prok.dist.bray, phy_subset)
+#  permutest(dispersion)
   returnlist <- list(pcoa, permanovaresult)
     return(returnlist)
 }
-
-## Dispersion (incorporate into function later)
-#```{r}
-#EVdisp <- betadisper(prok.dist.bray, FC.css@sam_data$Fungicide)
-#permutest(EVdisp)
-#```
 
 #Use function to generate PCoA and PERMANOVA
 
 #2021
 T1_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T1")
-T2_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T2")
-T3_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T3")
-T4_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T4")
-T5_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T5")
-T6_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T6")
+T1_2021[[2]]
+```
 
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1  0.25696 0.08445 2.0733  0.043 *
+## Cultivar            1  0.15628 0.05136 1.2609  0.235  
+## Fungicide:Cultivar  1  0.15089 0.04959 1.2174  0.278  
+## Residual           20  2.47878 0.81461                
+## Total              23  3.04291 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T2_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T2")
+T2_2021[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)   
+## Fungicide           1   0.2051 0.04868 1.2790  0.249   
+## Cultivar            1   0.0894 0.02121 0.5573  0.687   
+## Fungicide:Cultivar  1   0.7120 0.16896 4.4397  0.007 **
+## Residual           20   3.2072 0.76115                 
+## Total              23   4.2137 1.00000                 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T3_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T3")
+T3_2021[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.06976 0.06160 1.4774  0.165
+## Cultivar            1  0.08298 0.07327 1.7573  0.115
+## Fungicide:Cultivar  1  0.03535 0.03122 0.7487  0.609
+## Residual           20  0.94436 0.83391              
+## Total              23  1.13245 1.00000
+```
+
+```r
+T4_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T4")
+T4_2021[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1  0.22589 0.10617 2.4279  0.034 *
+## Cultivar            1  0.07288 0.03425 0.7833  0.544  
+## Fungicide:Cultivar  1  0.15411 0.07243 1.6564  0.139  
+## Residual           18  1.67475 0.78714                
+## Total              21  2.12763 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T5_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T5")
+T5_2021[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1  0.18953 0.12170 2.9681  0.012 *
+## Cultivar            1  0.13737 0.08821 2.1512  0.068 .
+## Fungicide:Cultivar  1  0.01720 0.01104 0.2693  0.969  
+## Residual           19  1.21325 0.77905                
+## Total              22  1.55735 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T6_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T6")
+T6_2021[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)    
+## Fungicide           1  0.19801 0.17628 4.6407  0.001 ***
+## Cultivar            1  0.05858 0.05215 1.3729  0.205    
+## Fungicide:Cultivar  1  0.01332 0.01186 0.3121  0.963    
+## Residual           20  0.85337 0.75971                  
+## Total              23  1.12327 1.00000                  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
 pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
                                T2_2021[[1]],
                                T3_2021[[1]],
@@ -872,18 +993,173 @@ pcoa_2021
 ![](EV_21-22_Fungi_files/figure-html/unnamed-chunk-24-1.png)<!-- -->
 
 ```r
-#T5_2021[[1]]$data
-
 #2022
 T1_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T1")
-T2_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T2")
-T3_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T3")
-T4_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T4")
-T5_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T5")
-T6_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T6")
-T7_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T7")
-T8_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T8")
+T1_2022[[2]]
+```
 
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.17568 0.05562 0.9737  0.406
+## Cultivar            1  0.12908 0.04087 0.7154  0.709
+## Fungicide:Cultivar  1  0.14746 0.04669 0.8173  0.591
+## Residual           15  2.70624 0.85682              
+## Total              18  3.15846 1.00000
+```
+
+```r
+T2_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T2")
+T2_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.00872 0.01179 0.2594  0.882
+## Cultivar            1  0.04757 0.06431 1.4151  0.240
+## Fungicide:Cultivar  1  0.01114 0.01506 0.3313  0.846
+## Residual           20  0.67227 0.90885              
+## Total              23  0.73969 1.00000
+```
+
+```r
+T3_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T3")
+T3_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.06376 0.04793 1.0852  0.341
+## Cultivar            1  0.05470 0.04112 0.9310  0.417
+## Fungicide:Cultivar  1  0.03672 0.02760 0.6249  0.670
+## Residual           20  1.17511 0.88335              
+## Total              23  1.33029 1.00000
+```
+
+```r
+T4_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T4")
+T4_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.02373 0.03762 0.7746  0.530
+## Cultivar            1  0.02447 0.03879 0.7987  0.507
+## Fungicide:Cultivar  1  0.03116 0.04939 1.0171  0.365
+## Residual           18  0.55143 0.87419              
+## Total              21  0.63078 1.00000
+```
+
+```r
+T5_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T5")
+T5_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1  0.20682 0.07848 1.7602  0.167  
+## Cultivar            1  0.25179 0.09555 2.1430  0.107  
+## Fungicide:Cultivar  1  0.29662 0.11256 2.5245  0.052 .
+## Residual           16  1.87996 0.71341                
+## Total              19  2.63519 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T6_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T6")
+T6_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1  0.07463 0.04349 0.9510  0.395  
+## Cultivar            1  0.18527 0.10796 2.3607  0.072 .
+## Fungicide:Cultivar  1  0.04361 0.02541 0.5557  0.699  
+## Residual           18  1.41265 0.82314                
+## Total              21  1.71617 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
+T7_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T7")
+T7_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)
+## Fungicide           1  0.10427 0.08006 1.6881  0.135
+## Cultivar            1  0.11598 0.08905 1.8777  0.117
+## Fungicide:Cultivar  1  0.09382 0.07204 1.5190  0.171
+## Residual           16  0.98828 0.75884              
+## Total              19  1.30236 1.00000
+```
+
+```r
+T8_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T8")
+T8_2022[[2]]
+```
+
+```
+## Permutation test for adonis under reduced model
+## Terms added sequentially (first to last)
+## Permutation: free
+## Number of permutations: 999
+## 
+## adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+##                    Df SumOfSqs      R2      F Pr(>F)  
+## Fungicide           1   0.1294 0.02863 1.2898  0.237  
+## Cultivar            1   0.1997 0.04420 1.9909  0.115  
+## Fungicide:Cultivar  1   0.3775 0.08356 3.7639  0.023 *
+## Residual           38   3.8113 0.84361                
+## Total              41   4.5179 1.00000                
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
+
+```r
 pcoa_2022 <- ggpubr::ggarrange(T1_2022[[1]],
                                T2_2022[[1]],
                                T3_2022[[1]],

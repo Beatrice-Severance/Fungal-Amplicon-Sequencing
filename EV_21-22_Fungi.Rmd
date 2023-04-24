@@ -381,25 +381,29 @@ FilterGroup <- function(physeq, var1, var2){
   prok.dist.bray = phyloseq::distance(phy_subset, "bray") # create bray-curtis distance matrix
   set.seed(123454245)
   permanovaresult <- adonis2(prok.dist.bray~Fungicide*Cultivar, as(sample_data(phy_subset), "data.frame"), permutations = 999)
+  
+# Beta Dispersion Values
+#  dispersion <- betadisper(prok.dist.bray, phy_subset)
+#  permutest(dispersion)
   returnlist <- list(pcoa, permanovaresult)
     return(returnlist)
 }
-
-## Dispersion (incorporate into function later)
-#```{r}
-#EVdisp <- betadisper(prok.dist.bray, FC.css@sam_data$Fungicide)
-#permutest(EVdisp)
-#```
 
 #Use function to generate PCoA and PERMANOVA
 
 #2021
 T1_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T1")
+T1_2021[[2]]
 T2_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T2")
+T2_2021[[2]]
 T3_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T3")
+T3_2021[[2]]
 T4_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T4")
+T4_2021[[2]]
 T5_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T5")
+T5_2021[[2]]
 T6_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T6")
+T6_2021[[2]]
 
 pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
                                T2_2021[[1]],
@@ -411,17 +415,23 @@ pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
                                nrow = 2, ncol = 3, common.legend = TRUE)
 pcoa_2021
 
-#T5_2021[[1]]$data
-
 #2022
 T1_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T1")
+T1_2022[[2]]
 T2_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T2")
+T2_2022[[2]]
 T3_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T3")
+T3_2022[[2]]
 T4_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T4")
+T4_2022[[2]]
 T5_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T5")
+T5_2022[[2]]
 T6_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T6")
+T6_2022[[2]]
 T7_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T7")
+T7_2022[[2]]
 T8_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T8")
+T8_2022[[2]]
 
 pcoa_2022 <- ggpubr::ggarrange(T1_2022[[1]],
                                T2_2022[[1]],
