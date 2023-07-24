@@ -1,7 +1,7 @@
 ---
 title: "EV_21-22_Fungi"
 author: "Beatrice Severance, Zachary Noel"
-date: "2023-04-13"
+date: "2023-07-24"
 output: 
   html_document:
     keep_md: yes
@@ -373,8 +373,10 @@ FilterGroup <- function(physeq, var1, var2){
     theme_classic() +
     xlab(paste("PCoA1 -", axis1, "%")) +
     ylab(paste("PCoA2 -", axis2, "%")) +
+    ggtitle(paste(var2)) +
+    theme(plot.title = element_text(hjust = 0.5)) +
     geom_point(size = 4) +
-    scale_color_manual(values = cbbPalette)
+    scale_color_manual(values = c("#D55E00", "#0072B2"))
   pcoa
 
 # PERMANOVA Code
@@ -412,7 +414,11 @@ pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
                                T5_2021[[1]],
                                T6_2021[[1]],
                                labels = "auto",
-                               nrow = 2, ncol = 3, common.legend = TRUE)
+                               nrow = 2, ncol = 3, common.legend = TRUE, legend = "bottom")
+
+annotate_figure(pcoa_2021, top = text_grob("2021 Community Shifts Among Cultivars",
+                face = "bold", size = 14))
+
 pcoa_2021
 
 #2022
@@ -442,6 +448,10 @@ pcoa_2022 <- ggpubr::ggarrange(T1_2022[[1]],
                                T7_2022[[1]],
                                T8_2022[[1]],
                                labels = "auto",
-                               nrow = 2, ncol = 4, common.legend = TRUE)
+                               nrow = 2, ncol = 4, common.legend = TRUE, legend = "bottom")
+
+annotate_figure(pcoa_2022, top = text_grob("2022 Community Shifts Among Cultivars",
+                                           face = "bold", size = 14))
+
 pcoa_2022
 ```
