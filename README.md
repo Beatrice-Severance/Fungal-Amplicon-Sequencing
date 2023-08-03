@@ -30,12 +30,15 @@ This is a script that utilizes VSEARCH to dereplicate, and USEARCH to cluster an
 
 # Create Taxonomy
 Fungal taxonomy is created utilizing the UNITE database. Multiple taxonomy programs are used, SINTAX and NBC (Naive Baysian Classifier). SINTAX is able to classify mock sequences used in the experiment that the NBC commonly misses. However, SINTAX does not classify some well-known sequences, so the NBC algorithm is used to fill in the gaps. Both programs use the otus_R1.fasta file created in the clustering step as input.
+The mock sequences used come from the following [manuscript](https://doi.org/10.7717%2Fpeerj.4925).
 
 ## [NBC Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/5_DADA2_NBC.sh)
 This script requires the file dada2_assigntax_NBC.R which will use the database provided to create taxonomy based on the NBC algorithm. This script requires a large amount of memory in order to run, so should be taken into account when attempting to replicate this pipeline. 1 core and 32gb of memory produced parallel efficiency of 99.37% and memory efficiency of 60.63%. The script creates an .rds file which will allow users to view the taxonomy in R or RStudio. The database that was used for this script is located [here](https://doi.plutof.ut.ee/doi/10.15156/BIO/2483914). The latest release was used for analysis: 29.11.2022
+Mock sequences in NBC format can be found [here](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Mock_Sequences/mocksequencesNBC.txt).
 
 ## [SINTAX Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/5_taxonomy_SINTAX.sh)
 This script utilizes the SINTAX algorithm to create a fungal taxonomy. VSEARCH is the medium used to achieve this goal. The database that was used for this script is located [here](https://doi.plutof.ut.ee/doi/10.15156/BIO/2483924). The latest release was used for analysis: 29.11.2022
+Mock sequences in SINTAX format can be found [here](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Mock_Sequences/mocksequencesSINTAX.txt).
 
 # [Mapping](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/6_mapping.sh)
 This script will create an OTU table that will be used for downstream analysis. It utilizes the [demultiplexed reads](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/combsamples.txt) and aligns these reads back to the clustered OTUs (otus_R1.fasta).

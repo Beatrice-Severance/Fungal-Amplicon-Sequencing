@@ -1,0 +1,107 @@
+---
+title: "Data_Wrangling"
+author: "Beatrice Severance"
+date: "2023-03-23"
+output:
+  html_document:
+    keep_md: yes
+    word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Dataset and Dependencies
+
+```{r, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+
+filename = "Microbiome.csv"
+microbiome <- read.csv(filename, header = TRUE)
+```
+
+## Question 1
+
+```{r}
+microbiome2 <- select(microbiome, OTU, SampleID, Abundance, Crop, Compartment, DateSampled, GrowthStage, Treatment,
+                      Rep, Fungicide, Kingdom:Taxonomy)
+```
+
+## Question 2
+
+```{r}
+microbiome2 %>%
+  group_by(OTU, Compartment) %>%
+  mutate(Percent = Abundance*100) %>%
+  summarize(Mean = mean(Percent))
+```
+
+## Question 3
+
+```{r}
+microbiome2 %>%
+  group_by(OTU, Compartment, Fungicide) %>%
+  mutate(Percent = Abundance*100) %>%
+  summarize(Mean = mean(Percent))
+```
+
+## Question 4
+
+```{r}
+microbiome2 %>%
+  filter(Class == "Dothideomycetes") %>%
+  mutate(Percent = Abundance*100) %>%
+  group_by(OTU, Compartment, Fungicide, Class) %>%
+  summarize(Mean = mean(Percent))
+```
+
+## Question 5
+
+```{r}
+microbiome2 %>%
+  filter(Class == "Dothideomycetes") %>%
+  mutate(Percent = Abundance*100) %>%
+  group_by(OTU, Compartment, Fungicide, Order) %>%
+  summarize(Mean = mean(Percent))
+```
+
+## Question 6
+
+```{r}
+microbiome2 %>%
+  filter(Class == "Dothideomycetes") %>%
+  mutate(Percent = Abundance*100) %>%
+  group_by(OTU, Compartment, Fungicide, Order) %>%
+  summarize(Mean = mean(Percent), n = n(), sd.dev = sd(Percent)) %>%
+  mutate(std.err = sd.dev/sqrt(n))
+```
+
+## Question 7
+
+```{r}
+microbiome3 <- microbiome2 %>%
+  filter(Class == "Dothideomycetes") %>%
+  mutate(Percent = Abundance*100) %>%
+  group_by(Order, Compartment, Fungicide) %>%
+  summarize(Mean = mean(Percent)) %>%
+  pivot_wider(names_from = Compartment, values_from = Mean)
+head(microbiome3)
+```
+
+## Question 8
+
+```{r}
+microbiome3 <- microbiome2 %>%
+  filter(Class == "Dothideomycetes") %>%
+  mutate(Percent = Abundance*100) %>%
+  group_by(Order, Compartment, Fungicide) %>%
+  summarize(Mean = mean(Percent)) %>%
+  pivot_wider(names_from = Compartment, values_from = Mean) %>%
+  ggplot(aes(x = Root, y = reorder(Order, Root), fill = Fungicide)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  xlab("Percent relative abundance") +
+  ylab("")
+microbiome3
+```
