@@ -52,8 +52,18 @@ Combined, these steps provide the following output files that can be utilized in
 # R Analysis
 R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.Rmd) will execute the following steps:
 - Load dependencies
+  - Dependencies used for analysis:
+    - phyloseq [version 1.44.0](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217#s6) 
+    - vegan [version 2.6-4](https://github.com/vegandevs/vegan/releases/tag/v2.6-4)
+    - tidyverse [version 2.0.0](https://github.com/tidyverse/tidyverse/releases/tag/v2.0.0)
+    - ggplot2 [version 3.4.2](https://cloud.r-project.org/web/packages/ggplot2/index.html)
+    - Biostrings [version 2.68.1](https://bioconductor.org/packages/release/bioc/html/Biostrings.html)
+    - ggpubr [version 0.6.0](https://cran.r-project.org/web/packages/ggpubr/index.html)
+    - decontam [version 1.20.0](https://github.com/benjjneb/decontam)
+    - metagenomeSeq [version 1.42.0](https://github.com/HCBravoLab/metagenomeSeq)
+    - indicspecies [version 1.7.14](https://cran.r-project.org/web/packages/indicspecies/index.html)
 - Utilize a colorblind palette
-- Load above files to create a phyloseq object
+- Load in [files](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/tree/main/phyloseq_input) to create a phyloseq object
 - Decontaminate samples (take out controls, low quality reads, etc.)
 - Provide read distribution for the dataset, including a histogram
 - Rarefaction analysis, including line graphs

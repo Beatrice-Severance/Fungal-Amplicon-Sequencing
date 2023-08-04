@@ -263,8 +263,9 @@ rich_21 <- sample.data.fungi %>%
   subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
 ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
   geom_boxplot()+
-  theme_classic()+
+  theme_classic(base_size = 22)+
   facet_wrap(~Year, scales = "free") +
+  scale_fill_discrete(name = "Treatment") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
 ```
 ### Richness 2022
@@ -276,8 +277,9 @@ rich_22 <- sample.data.fungi %>%
   subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
 ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
   geom_boxplot()+
-  theme_classic()+
+  theme_classic(base_size = 22)+
   facet_wrap(~Year, scales = "free") +
+  scale_fill_discrete(name = "Treatment") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
 ```
 ### Evenness 2021
