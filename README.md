@@ -64,12 +64,19 @@ R Analysis for this project starts with the creation of a phyloseq object. In ad
     - indicspecies [version 1.7.14](https://cran.r-project.org/web/packages/indicspecies/index.html)
 - Utilize a colorblind palette
 - Load in [files](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/tree/main/phyloseq_input) to create a phyloseq object
-- Decontaminate samples (take out controls, low quality reads, etc.)
+- Decontaminate samples 
+  - Take out controls
+  - Remove low-quality reads (<5000)
+  - Subset to kingdom Fungi
 - Provide read distribution for the dataset, including a histogram
 - Rarefaction analysis, including line graphs
 - Alpha diversity analysis
+  - Shannon
+  - Inverse Simpson
+  - Richness
 - Cumulative sum scaling (CSS) Normalization
-- Beta diversity analysis, including a principal coordinates analysis (PCoA) plot with Bray-Curtis distances
+- Beta diversity analysis
+  - Principal coordinates analysis (PCoA) plot with Bray-Curtis distances
 - PERMANOVA to test for differences in centroids
 
 The rendered HTML file for the data can be viewed [here](https://htmlpreview.github.io/?https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.html).
