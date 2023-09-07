@@ -1,0 +1,14 @@
+Analysis of Variance Table
+
+Response: invsimpson
+                         Df  Sum Sq Mean Sq F value    Pr(>F)    
+Fungicide                 1   8.311  8.3112  3.5591 0.0616989 .  
+Time                      5  55.267 11.0535  4.7334 0.0005653 ***
+Cultivar                  1   2.228  2.2282  0.9542 0.3306688    
+Fungicide:Time            5   8.968  1.7937  0.7681 0.5746014    
+Fungicide:Cultivar        1   1.618  1.6177  0.6928 0.4069253    
+Time:Cultivar             5  19.644  3.9288  1.6824 0.1441849    
+Fungicide:Time:Cultivar   5  17.646  3.5292  1.5113 0.1915242    
+Residuals               117 273.219  2.3352                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

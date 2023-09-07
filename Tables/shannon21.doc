@@ -1,0 +1,14 @@
+Analysis of Variance Table
+
+Response: shannon
+                         Df Sum Sq  Mean Sq F value  Pr(>F)  
+Fungicide                 1 0.0238 0.023823  0.4933 0.48386  
+Time                      5 0.7343 0.146860  3.0410 0.01286 *
+Cultivar                  1 0.0432 0.043209  0.8947 0.34615  
+Fungicide:Time            5 0.2214 0.044276  0.9168 0.47273  
+Fungicide:Cultivar        1 0.0097 0.009657  0.2000 0.65557  
+Time:Cultivar             5 0.2117 0.042337  0.8767 0.49912  
+Fungicide:Time:Cultivar   5 0.2493 0.049850  1.0322 0.40204  
+Residuals               117 5.6504 0.048294                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,14 @@
+Analysis of Variance Table
+
+Response: richness
+                         Df Sum Sq Mean Sq F value  Pr(>F)    
+Fungicide                 1    519   519.4  1.0743 0.30210    
+Time                      5 118439 23687.8 48.9926 < 2e-16 ***
+Cultivar                  1   1107  1107.3  2.2903 0.13288    
+Fungicide:Time            5   5312  1062.5  2.1975 0.05912 .  
+Fungicide:Cultivar        1   1074  1073.7  2.2206 0.13887    
+Time:Cultivar             5   2095   418.9  0.8665 0.50594    
+Fungicide:Time:Cultivar   5   1963   392.6  0.8121 0.54335    
+Residuals               117  56569   483.5                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
