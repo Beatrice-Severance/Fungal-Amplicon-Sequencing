@@ -62,12 +62,12 @@ This script will create an OTU table that will be used for downstream analysis. 
 
 #
 Combined, these steps provide the following output files that can be utilized in a phyloseq object in R:
-- [OTU table](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/otu.table.csv)
-- ITS taxonomy files (from SINTAX and [NBC](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/NBC.csv))
-- [otus.fasta](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/otus_R1.fasta) file
+- [OTU table](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/otu.table.csv)
+- ITS taxonomy files (from SINTAX and [NBC](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/NBC.csv))
+- [otus.fasta](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/otus_R1.fasta) file
 
 # R Analysis
-R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.Rmd) will execute the following steps:
+R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.Rmd) will execute the following steps:
 - Load dependencies
   - Dependencies used for analysis:
     - phyloseq [version 1.44.0](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217#s6) 
@@ -80,7 +80,7 @@ R Analysis for this project starts with the creation of a phyloseq object. In ad
     - metagenomeSeq [version 1.42.0](https://github.com/HCBravoLab/metagenomeSeq)
     - indicspecies [version 1.7.14](https://cran.r-project.org/web/packages/indicspecies/index.html)
 - Utilize a colorblind palette
-- Load in [files](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/tree/main/phyloseq_input) to create a phyloseq object
+- Load in [files](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/tree/main/EV_21-22/EV_21-22_phyloseq_input) to create a phyloseq object
 - Decontaminate samples 
   - Take out controls
   - Remove low-quality reads (<5000)

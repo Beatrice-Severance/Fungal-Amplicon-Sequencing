@@ -213,7 +213,12 @@ ggplot(aes(x = Time, y = shannon, fill = Fungicide)) +
   geom_boxplot()+
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
+  stat_compare_means(method = "t.test", label = "p.signif", hide.ns = TRUE) +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+#aes(label = paste0("p = ", after_stat(p.format))
+
+capture.output(anova(linear.model), file="Tables/shannon21.doc")
 ```
 ### Shannon 2022
 ```{r echo = T}
@@ -227,6 +232,8 @@ ggplot(aes(x = Time, y = shannon, fill = Fungicide)) +
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/shannon22.doc")
 ```
 ### Invsimpson 2021
 ```{r echo = T}
@@ -240,6 +247,8 @@ ggplot(aes(x = Time, y = invsimpson, fill = Fungicide)) +
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/invsimp21.doc")
 ```
 ### Invsimpson 2022
 ```{r echo = T}
@@ -253,6 +262,8 @@ ggplot(aes(x = Time, y = invsimpson, fill = Fungicide)) +
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/invsimp22.doc")
 ```
 ### Richness 2021
 ```{r echo = T}
@@ -263,10 +274,13 @@ rich_21 <- sample.data.fungi %>%
   subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2021") %>%
 ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
   geom_boxplot()+
+#  theme_classic()+
   theme_classic(base_size = 22)+
   facet_wrap(~Year, scales = "free") +
   scale_fill_discrete(name = "Treatment") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/richness21.doc")
 ```
 ### Richness 2022
 ```{r echo = T}
@@ -277,10 +291,13 @@ rich_22 <- sample.data.fungi %>%
   subset(Type == "Leaf" & Fungicide %in% c("Fungicide", "Control") & Year == "2022") %>%
 ggplot(aes(x = Time, y = richness, fill = Fungicide)) +
   geom_boxplot()+
-  theme_classic(base_size = 22)+
+  theme_classic()+
+#  theme_classic(base_size = 22)+
   facet_wrap(~Year, scales = "free") +
   scale_fill_discrete(name = "Treatment") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/richness22.doc")
 ```
 ### Evenness 2021
 ```{r echo = T}
@@ -294,6 +311,8 @@ ggplot(aes(x = Time, y = even, fill = Fungicide)) +
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/evenness21.doc")
 ```
 ### Evenness 2022
 ```{r echo = T}
@@ -307,6 +326,8 @@ ggplot(aes(x = Time, y = even, fill = Fungicide)) +
   theme_classic()+
   facet_wrap(~Year, scales = "free") +
   stat_compare_means(method = "t.test", aes(label = paste0("p = ", after_stat(p.format))))
+
+capture.output(anova(linear.model), file="Tables/evenness22.doc")
 ```
 ### 2021 Arranged Plot
 ```{r echo = T}
@@ -398,16 +419,22 @@ FilterGroup <- function(physeq, var1, var2){
 #2021
 T1_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T1")
 T1_2021[[2]]
+capture.output(T1_2021[[2]], file="Tables/permaT121.doc")
 T2_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T2")
 T2_2021[[2]]
+capture.output(T2_2021[[2]], file="Tables/permaT221.doc")
 T3_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T3")
 T3_2021[[2]]
+capture.output(T3_2021[[2]], file="Tables/permaT321.doc")
 T4_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T4")
 T4_2021[[2]]
+capture.output(T4_2021[[2]], file="Tables/permaT421.doc")
 T5_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T5")
 T5_2021[[2]]
+capture.output(T5_2021[[2]], file="Tables/permaT521.doc")
 T6_2021 <- FilterGroup(physeq.css, var1 = "2021", var2 = "T6")
 T6_2021[[2]]
+capture.output(T6_2021[[2]], file="Tables/permaT621.doc")
 
 pcoa_2021 <- ggpubr::ggarrange(T1_2021[[1]],
                                T2_2021[[1]],
@@ -426,20 +453,28 @@ pcoa_2021
 #2022
 T1_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T1")
 T1_2022[[2]]
+capture.output(T1_2022[[2]], file="Tables/permaT122.doc")
 T2_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T2")
 T2_2022[[2]]
+capture.output(T2_2022[[2]], file="Tables/permaT222.doc")
 T3_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T3")
 T3_2022[[2]]
+capture.output(T3_2022[[2]], file="Tables/permaT322.doc")
 T4_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T4")
 T4_2022[[2]]
+capture.output(T4_2022[[2]], file="Tables/permaT422.doc")
 T5_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T5")
 T5_2022[[2]]
+capture.output(T5_2022[[2]], file="Tables/permaT522.doc")
 T6_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T6")
 T6_2022[[2]]
+capture.output(T6_2022[[2]], file="Tables/permaT622.doc")
 T7_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T7")
 T7_2022[[2]]
+capture.output(T7_2022[[2]], file="Tables/permaT722.doc")
 T8_2022 <- FilterGroup(physeq.css, var1 = "2022", var2 = "T8")
 T8_2022[[2]]
+capture.output(T8_2022[[2]], file="Tables/permaT822.doc")
 
 pcoa_2022 <- ggpubr::ggarrange(T1_2022[[1]],
                                T2_2022[[1]],
