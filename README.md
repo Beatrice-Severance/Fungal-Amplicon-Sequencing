@@ -67,7 +67,7 @@ Combined, these steps provide the following output files that can be utilized in
 - [otus.fasta](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/otus_R1.fasta) file
 
 # R Analysis
-R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.Rmd) will execute the following steps:
+R Analysis for this project starts with the creation of a phyloseq object. In addition to the files above, a [metadata](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_phyloseq_input/21-22_Metadata.csv) file will be necessary to run analysis. The [R Markdown file](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22/EV_21-22_Fungi.Rmd) will execute the following steps:
 - Load dependencies
   - Dependencies used for analysis:
     - phyloseq [version 1.44.0](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061217#s6) 
@@ -97,3 +97,5 @@ R Analysis for this project starts with the creation of a phyloseq object. In ad
 - PERMANOVA to test for differences in centroids
 
 The rendered HTML file for the data can be viewed [here](https://htmlpreview.github.io/?https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/EV_21-22_Fungi.html).
+
+Figures generated in R can be viewed [here](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/tree/main/EV_21-22/EV_21-22_figures).
