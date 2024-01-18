@@ -1,0 +1,14 @@
+Permutation test for adonis under reduced model
+Terms added sequentially (first to last)
+Permutation: free
+Number of permutations: 999
+
+adonis2(formula = prok.dist.bray ~ Fungicide * Cultivar, data = as(sample_data(phy_subset), "data.frame"), permutations = 999)
+                   Df SumOfSqs      R2      F Pr(>F)  
+Fungicide           1  0.22589 0.10617 2.4279  0.034 *
+Cultivar            1  0.07288 0.03425 0.7833  0.544  
+Fungicide:Cultivar  1  0.15411 0.07243 1.6564  0.139  
+Residual           18  1.67475 0.78714                
+Total              21  2.12763 1.00000                
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
