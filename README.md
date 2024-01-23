@@ -46,7 +46,7 @@ This is a script that utilizes VSEARCH to dereplicate, and USEARCH to cluster an
 - [Technical support](http://drive5.com/usearch/manual/support.html) 
 
 # Create Taxonomy
-Fungal taxonomy is created utilizing the UNITE database. Multiple taxonomy programs are used, SINTAX and NBC (Naive Baysian Classifier). SINTAX is able to classify mock sequences used in the experiment that the NBC commonly misses. However, SINTAX does not classify some well-known sequences, so the NBC algorithm is used to fill in the gaps. Both programs use the otus_R1.fasta file created in the clustering step as input. The NBC file was used as the base for eventual R integration in a phyloseq object after manually adding SINTAX mock sequences into corresponding unidentified NBC rows.
+Fungal taxonomy is created utilizing the UNITE database. Multiple taxonomy programs are used, SINTAX and NBC (Naive Baysian Classifier). SINTAX is able to classify mock sequences used in the experiment that the NBC commonly misses. However, SINTAX does not classify some well-known sequences, so the NBC algorithm is used to fill in the gaps. Both programs use the otus_R1.fasta file created in the clustering step as input.
 The mock sequences used come from the following [manuscript](https://doi.org/10.7717%2Fpeerj.4925).
 
 ## [NBC Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/5_DADA2_NBC.sh)
@@ -56,6 +56,9 @@ Mock sequences in NBC format can be found [here](https://github.com/Beatrice-Sev
 ## [SINTAX Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/5_taxonomy_SINTAX.sh)
 This script utilizes the SINTAX algorithm to create a fungal taxonomy. VSEARCH is the medium used to achieve this goal. The database that was used for this script is located [here](https://doi.plutof.ut.ee/doi/10.15156/BIO/2483924). The following release was used for analysis: 29.11.2022
 Mock sequences in SINTAX format can be found [here](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Mock_Sequences/mocksequencesSINTAX.txt).
+
+# [Combine Taxonomy](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/7_taxacombine.sh)
+Because two taxonomic classifiers are required to obtain appropriate taxonomy for samples and the mock communities, a combination step is required to create a table that includes both aspects. This script runs an [R script](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/NBC_SINTAX_combine.R) that replaces unidentified taxa by NBC that are identified as mock by SINTAX. The output file, NBC_SINTAX_comb.csv will be able to be incorporated into the phyloseq object.
 
 # [Mapping](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/6_mapping.sh)
 This script will create an OTU table that will be used for downstream analysis. It utilizes the [demultiplexed reads](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/Scripts/combsamples.txt) and aligns these reads back to the clustered OTUs (otus_R1.fasta). Before the main part of the script is run, a [Python script](https://github.com/Beatrice-Severance/Fungal-Amplicon-Sequencing/blob/main/ASAX_Scripts/replacefastaheaders_filename.py) is used to replace fasta headers. This is performed in order for the OTUs to be mapped back to their respective samples, instead of being processed as a singular sample. 
